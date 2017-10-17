@@ -107,7 +107,7 @@ public class Quiz extends AppCompatActivity {
             if (mScore <mAuswahlFragen.mQuestions.length && (mScore >(mAuswahlFragen.mQuestions.length-5))) {
                 mQuestionView.setText("Quiz beendet! \n\n" +
                         "Du hast " + mScore + " von " + mAuswahlFragen.mQuestions.length + " Punkten.\n" +
-                        "Du bist ein Datenschutzzwerg. Du bist schon auf einem guten Weg, doch halte stehts deine Augen offen, damit deine Daten sicher bleiben!");
+                        "Du bist ein Datenschutzzwerg! Du bist schon auf einem guten Weg, doch halte stehts deine Augen offen, damit deine Daten sicher bleiben!");
             }
             else
             {
