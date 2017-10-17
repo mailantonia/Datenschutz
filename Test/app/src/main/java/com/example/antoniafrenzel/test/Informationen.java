@@ -4,8 +4,10 @@ import android.graphics.ImageFormat;
 import android.icu.text.IDNA;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Informationen extends AppCompatActivity {
 
@@ -28,12 +30,17 @@ public class Informationen extends AppCompatActivity {
         updatedInfos();
     }
 
-    public void Button_Click()
-    {
-        InfoArrayNumber++;
-        updatedInfos();
-    }
+    //Button_Weiter
+     public void Button_Click(View v)
+     {
 
+         InfoArrayNumber = InfoArrayNumber + 1;
+         updatedInfos();
+
+         //But_Weiter.setText("Hallo" + InfoArrayNumber);
+     }
+
+    //Text aus Array setzten
     private void updatedInfos()
     {
         N_textView3.setText(N_Infos.getInfo(InfoArrayNumber));

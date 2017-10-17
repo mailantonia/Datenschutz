@@ -8,11 +8,11 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="350dp"
-        android:layout_height="188dp"
+        android:layout_width="323dp"
+        android:layout_height="161dp"
         android:text="Info:\n"
-        tools:layout_editor_absoluteY="84dp"
-        tools:layout_editor_absoluteX="17dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="31dp" />
 
     <Button
         android:id="@+id/button7"
@@ -21,6 +21,6 @@
         android:background="@android:color/holo_green_light"
         android:text="Weiter"
         android:onClick="Button_Click"
-        tools:layout_editor_absoluteY="418dp"
-        tools:layout_editor_absoluteX="119dp" />
+        tools:layout_editor_absoluteY="195dp"
+        tools:layout_editor_absoluteX="207dp" />
 </android.support.constraint.ConstraintLayout>
