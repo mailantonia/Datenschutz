@@ -13,15 +13,17 @@
         android:id="@+id/imageView2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="-94dp"
+        android:layout_marginTop="-14dp"
+        android:layout_gravity="center"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/ic_quiz"
-       />
+        />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="237dp"
         android:layout_height="78dp"
+        android:layout_margin="50dp"
         android:text="Willkommen zum Quiz!
 
 hier kannst du dein Wissen testen.
