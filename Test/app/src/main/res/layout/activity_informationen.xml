@@ -11,8 +11,8 @@
         android:layout_width="350dp"
         android:layout_height="188dp"
         android:text="Info:\n"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="84dp"
+        tools:layout_editor_absoluteX="17dp" />
 
     <Button
         android:id="@+id/button7"
@@ -20,6 +20,7 @@
         android:layout_height="50dp"
         android:background="@android:color/holo_green_light"
         android:text="Weiter"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="445dp" />
+        android:onClick="Button_Click"
+        tools:layout_editor_absoluteY="418dp"
+        tools:layout_editor_absoluteX="119dp" />
 </android.support.constraint.ConstraintLayout>
