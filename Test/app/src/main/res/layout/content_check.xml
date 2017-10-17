@@ -9,12 +9,21 @@
     tools:showIn="@layout/activity_check"
     android:layout_gravity="center">
 
+
+
     <Button
         android:id="@+id/button4"
         android:layout_width="304dp"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         android:onClick="startNewActivity"
         android:text="Zurück"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        tools:layout_editor_absoluteX="8dp" />
+         />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_check"
+         />
 </android.support.constraint.ConstraintLayout>

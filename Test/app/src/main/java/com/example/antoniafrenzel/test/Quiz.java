@@ -107,7 +107,7 @@ public class Quiz extends AppCompatActivity {
             if (mScore <mAuswahlFragen.mQuestions.length && (mScore >(mAuswahlFragen.mQuestions.length-5))) {
                 mQuestionView.setText("Quiz beendet! \n\n" +
                         "Du hast " + mScore + " von " + mAuswahlFragen.mQuestions.length + " Punkten.\n" +
-                        "Du bist ein Durchschnittsdatenschutzbürger. Du bist schon auf dem guten Weg, doch halte stehts deine Augen offen, damit deine Daten sicher bleiben!");
+                        "Du bist ein Datenschutzzwerg. Du bist schon auf einem guten Weg, doch halte stehts deine Augen offen, damit deine Daten sicher bleiben!");
             }
             else
             {
@@ -117,7 +117,7 @@ public class Quiz extends AppCompatActivity {
             }
         }
         else {
-            mAnzFrage.setText(mQuestionNumber+1 + ". Frage");
+            mAnzFrage.setText(mQuestionNumber+1 + ". Frage in insgesamt " + mAuswahlFragen.mQuestions.length);
             mQuestionView.setText(mAuswahlFragen.getFrage(mQuestionNumber));
             mButtonChoice1.setText(mAuswahlFragen.getAuswahl1(mQuestionNumber));
             mButtonChoice2.setText(mAuswahlFragen.getAuswahl2(mQuestionNumber));
