@@ -40,10 +40,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:backgroundTint="@android:color/holo_green_light"
-        android:text="Informationen"
         android:onClick="starttoInformation"
-        app:layout_constraintTop_toBottomOf="@+id/text1"
-        />
+        android:text="Informationen"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <Button
         android:id="@+id/button6"

@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context="com.example.antoniafrenzel.test.Informationen">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="350dp"
+        android:layout_height="188dp"
+        android:text="Info:\n"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Weiter"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="445dp" />
 </android.support.constraint.ConstraintLayout>

@@ -35,4 +35,10 @@ public class Seite3 extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void Infos_Datenschutz(View v) {
+
+        Intent intent = new Intent(this, Informationen.class);
+        startActivity(intent);
+    }
 }
