@@ -36,7 +36,8 @@
         <activity
             android:name=".Check"
             android:label="@string/title_activity_check"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Informationen"></activity>
     </application>
 
 </manifest>
