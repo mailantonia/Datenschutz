@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Quiz</string>
+    <string name="app_name">DataLocus</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_second">Start Quiz</string>
     <string name="title_activity_seite3">Seite3</string>
