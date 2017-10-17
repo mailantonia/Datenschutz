@@ -20,7 +20,8 @@
         android:layout_height="wrap_content"
         android:text="Punkte"
         android:layout_alignParentLeft="true"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"/>
 
     <TextView
         android:id="@+id/score"
@@ -28,6 +29,7 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:layout_alignParentRight="true"
+        android:textColor="@color/colorAccent"
         android:textSize="20sp" />
 
 </RelativeLayout>
