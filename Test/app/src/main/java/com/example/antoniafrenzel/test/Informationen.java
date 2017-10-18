@@ -46,7 +46,7 @@ public class Informationen extends AppCompatActivity {
     {
         InfoArrayNumber = InfoArrayNumber - 1;
         if (InfoArrayNumber < 0)
-        {/*Verweis aus Activity Seite 3*/}
+        {}
         else updatedInfos();
     }
 

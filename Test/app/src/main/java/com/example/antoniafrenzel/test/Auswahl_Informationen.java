@@ -14,14 +14,7 @@ public class Auswahl_Informationen {
                 "Fazit: Es ist wichtig das Recht auf Privatsphäre jedes Nutzers im Internet zu wahren. Zudem müssen Nutzer über die Weitergabe und das Sammeln ihrer persönlichen Daten ausreichend aufgeklärt werden. Ein Bewusstsein hierfür gilt es zu Schaffen.",
         };
 
-        public String getInfo(int i)
-        {
-                String Wissen = Infos[i];
-                return Wissen;
-        }
-}
-
-//public class Informationen_Standort{
+        //public class Informationen_Standort{
 //        public String Standort[]={
 //                "",
 //                "",
@@ -30,3 +23,11 @@ public class Auswahl_Informationen {
 //                "",
 //                "",
 //        };
+
+
+        public String getInfo(int i)
+        {
+                String Wissen = Infos[i];
+                return Wissen;
+        }
+}

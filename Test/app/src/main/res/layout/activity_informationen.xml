@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.antoniafrenzel.test.Informationen">
+    tools:context="com.example.antoniafrenzel.test.Informationen"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="367dp"
-        android:layout_height="103dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="400dp"
-        tools:context="com.example.antoniafrenzel.test.Informationen">
-
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="276dp"
+            android:layout_height="266dp"
+            android:text="TextView"/>
 
         <Button
             android:id="@+id/button10"
             android:backgroundTint="@android:color/holo_green_light"
             android:onClick="Button_Click_Zurück"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Zurück" />
 
         <Button
             android:id="@+id/button9"
             android:backgroundTint="@android:color/holo_green_light"
             android:onClick="Button_Click"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="Weiter" />
-    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="276dp"
-        android:layout_height="266dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="78dp" />
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informationen abbrechen" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
