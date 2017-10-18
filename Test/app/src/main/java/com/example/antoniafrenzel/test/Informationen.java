@@ -13,7 +13,7 @@ public class Informationen extends AppCompatActivity {
 
     private Auswahl_Informationen N_Infos = new Auswahl_Informationen();
 
-    private TextView N_textView4;
+    private TextView Textfeld;
     private Button But_Weiter;
     private Button But_Zurück;
     int InfoArrayNumber = 0;
@@ -24,9 +24,9 @@ public class Informationen extends AppCompatActivity {
         setContentView(R.layout.activity_informationen);
 
         //Variablen zuweisen aus Designer
-        N_textView4 = (TextView) findViewById(R.id.textView4);
-        But_Weiter = (Button) findViewById(R.id.button7);
-        But_Zurück = (Button) findViewById(R.id.button10);
+        Textfeld = (TextView) findViewById(R.id.textView4);
+        But_Weiter = (Button) findViewById(R.id.button10);
+        But_Zurück = (Button) findViewById(R.id.button9);
 
         //Funktion aufrufen, um Textfeld aus Array zu füllen
         updatedInfos();
@@ -36,30 +36,23 @@ public class Informationen extends AppCompatActivity {
      public void Button_Click(View v)
      {
          InfoArrayNumber = InfoArrayNumber + 1;
-         updatedInfos();
+         if (InfoArrayNumber > 4)
+         {/*Verweis aus Activity Seite 3*/}
+         else updatedInfos();
      }
 
     //Button Zurück
     public void Button_Click_Zurück(View v)
     {
         InfoArrayNumber = InfoArrayNumber - 1;
-        updatedInfos();
+        if (InfoArrayNumber < 0)
+        {/*Verweis aus Activity Seite 3*/}
+        else updatedInfos();
     }
 
     //Text aus Array setzten
     private void updatedInfos()
     {
-        if (InfoArrayNumber < 1)
-        {
-            But_Zurück.setText("Letzte Seite");
-            But_Weiter.setText("Weiter");
-        }
-        else
-        {
-            But_Weiter.setText("Letzte Seite");
-            But_Zurück.setText("Zurück");
-        }
-
-        N_textView4.setText(N_Infos.getInfo(InfoArrayNumber));
+        Textfeld.setText(N_Infos.getInfo(InfoArrayNumber));
     }
 }

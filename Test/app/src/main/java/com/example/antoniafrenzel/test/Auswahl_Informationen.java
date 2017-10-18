@@ -20,3 +20,13 @@ public class Auswahl_Informationen {
                 return Wissen;
         }
 }
+
+//public class Informationen_Standort{
+//        public String Standort[]={
+//                "",
+//                "",
+//                "",
+//                "",
+//                "",
+//                "",
+//        };
