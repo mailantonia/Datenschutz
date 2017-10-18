@@ -6,21 +6,47 @@
     android:layout_height="match_parent"
     tools:context="com.example.antoniafrenzel.test.Informationen">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="323dp"
-        android:layout_height="161dp"
-        android:text="Info:\n"
-        tools:layout_editor_absoluteY="16dp"
-        tools:layout_editor_absoluteX="31dp" />
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="147dp"
-        android:layout_height="50dp"
-        android:background="@android:color/holo_green_light"
-        android:text="Weiter"
-        android:onClick="Button_Click"
-        tools:layout_editor_absoluteY="195dp"
-        tools:layout_editor_absoluteX="207dp" />
+        <Button
+            android:id="@+id/button7"
+            android:onClick="Button_Click"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:layout_width="146dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:text="Weiter"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView4"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/button10"
+            android:onClick="Button_Click_Zurück"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:layout_width="146dp"
+            android:layout_height="50dp"
+            android:text="Zurück"
+            android:layout_below="@+id/textView4"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_toStartOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:onClick="updatedInfos"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="178dp"
+            android:text="TextView" />
+
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

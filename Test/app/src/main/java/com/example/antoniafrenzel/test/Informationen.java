@@ -13,8 +13,9 @@ public class Informationen extends AppCompatActivity {
 
     private Auswahl_Informationen N_Infos = new Auswahl_Informationen();
 
-    private TextView N_textView3;
+    private TextView N_textView4;
     private Button But_Weiter;
+    private Button But_Zurück;
     int InfoArrayNumber = 0;
 
     @Override
@@ -23,26 +24,42 @@ public class Informationen extends AppCompatActivity {
         setContentView(R.layout.activity_informationen);
 
         //Variablen zuweisen aus Designer
-        N_textView3 = (TextView) findViewById(R.id.textView3);
+        N_textView4 = (TextView) findViewById(R.id.textView4);
         But_Weiter = (Button) findViewById(R.id.button7);
+        But_Zurück = (Button) findViewById(R.id.button10);
 
         //Funktion aufrufen, um Textfeld aus Array zu füllen
         updatedInfos();
     }
 
-    //Button_Weiter
+    //Button Weiter
      public void Button_Click(View v)
      {
-
          InfoArrayNumber = InfoArrayNumber + 1;
          updatedInfos();
-
-         //But_Weiter.setText("Hallo" + InfoArrayNumber);
      }
+
+    //Button Zurück
+    public void Button_Click_Zurück(View v)
+    {
+        InfoArrayNumber = InfoArrayNumber - 1;
+        updatedInfos();
+    }
 
     //Text aus Array setzten
     private void updatedInfos()
     {
-        N_textView3.setText(N_Infos.getInfo(InfoArrayNumber));
+        if (InfoArrayNumber < 1)
+        {
+            But_Zurück.setText("Letzte Seite");
+            But_Weiter.setText("Weiter");
+        }
+        else
+        {
+            But_Weiter.setText("Letzte Seite");
+            But_Zurück.setText("Zurück");
+        }
+
+        N_textView4.setText(N_Infos.getInfo(InfoArrayNumber));
     }
 }
