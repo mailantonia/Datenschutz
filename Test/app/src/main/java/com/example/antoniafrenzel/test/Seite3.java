@@ -26,14 +26,12 @@ public class Seite3 extends AppCompatActivity {
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
 }
+
     public void startNewActivity(View v) {
 
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-
     }
 
     public void Infos_Datenschutz(View v) {
@@ -43,6 +41,12 @@ public class Seite3 extends AppCompatActivity {
     }
 
     public void Infos_Standortlokalisierung(View v) {
+
+        Intent intent = new Intent(this, Informationen_Standort.class);
+        startActivity(intent);
+    }
+
+    public void Infos_Google(View v) {
 
         Intent intent = new Intent(this, Informationen_Standort.class);
         startActivity(intent);

@@ -14,7 +14,7 @@ import android.widget.Toast;
  * Created by Clara on 19.10.2017.
  */
 
-    public class Informationen_Standort extends AppCompatActivity {
+public class Informationen_Standort extends AppCompatActivity {
 
         private Auswahl_Informationen N_InfoStandort = new Auswahl_Informationen();
         private TextView Textfeld_2;
@@ -27,14 +27,14 @@ import android.widget.Toast;
 
             //Variablen zuweisen aus Designer
             Textfeld_2 = (TextView) findViewById(R.id.textView3);
-            
+
             //Funktion aufrufen, um Textfeld aus Array zu füllen
             standortInfos();
         }
 
-    //Text aus Standort Array setzten
-    private void standortInfos()
-    {
-        Textfeld_2.setText(N_InfoStandort.getInfoStandort(InfoArrayStandort));
-    }
+        //Text aus Standort Array setzten
+        private void standortInfos()
+        {
+            Textfeld_2.setText(N_InfoStandort.getInfoStandort(InfoArrayStandort));
+        }
 }
