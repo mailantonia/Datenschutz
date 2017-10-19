@@ -10,11 +10,22 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="276dp"
+            android:layout_width="300dp"
             android:layout_height="266dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
             android:text="TextView"/>
 
-        <Button
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="Button_Click"
+        android:text="Weiter" />
+
+    <Button
             android:id="@+id/button10"
             android:backgroundTint="@android:color/holo_green_light"
             android:onClick="Button_Click_Zurück"
@@ -22,16 +33,10 @@
             android:layout_height="wrap_content"
             android:text="Zurück" />
 
-        <Button
-            android:id="@+id/button9"
-            android:backgroundTint="@android:color/holo_green_light"
-            android:onClick="Button_Click"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Weiter" />
-
-        <Button
+    <Button
             android:id="@+id/button11"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:onClick="starttoInformation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Informationen abbrechen" />

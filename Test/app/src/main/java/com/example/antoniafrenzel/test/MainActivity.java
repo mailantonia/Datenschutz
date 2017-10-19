@@ -51,12 +51,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
     public void starttoInformation(View v) {
 
         Intent intent = new Intent(this, Seite3.class);
         startActivity(intent);
 
     }
+
     public void starttoCheck(View v) {
 
         Intent intent = new Intent(this, Check.class);

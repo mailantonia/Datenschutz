@@ -55,6 +55,7 @@
         android:layout_marginTop="1dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="Standortlokalisierung."
+        android:onClick="standortInfos"
         app:layout_constraintTop_toBottomOf="@+id/button1"
         tools:layout_editor_absoluteX="8dp" />
 
