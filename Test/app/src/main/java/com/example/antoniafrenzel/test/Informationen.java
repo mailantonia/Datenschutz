@@ -13,7 +13,6 @@ import android.widget.Toast;
 public class Informationen extends AppCompatActivity {
 
     private Auswahl_Informationen N_Infos = new Auswahl_Informationen();
-    private Auswahl_Informationen N_InfoStandort = new Auswahl_Informationen();
     private TextView Textfeld;
     private Button But_Weiter;
     private Button But_Zurück;
@@ -83,25 +82,4 @@ public class Informationen extends AppCompatActivity {
         Textfeld.setText(N_Infos.getInfo(InfoArrayNumber));
     }
 
-    //ZWEITER INFO BUTTON STANDORTLOKALISIERUNG
-
-//    protected void onCreate2(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_informationen);
-//
-//        //Variablen zuweisen aus Designer
-//        Textfeld = (TextView) findViewById(R.id.textView4);
-//        But_Weiter = (Button) findViewById(R.id.button9);
-//        But_Zurück = (Button) findViewById(R.id.button10);
-//
-//        //Funktion aufrufen, um Textfeld aus Array zu füllen
-//        standortInfos();
-//    }
-
-
-    //Text aus Standort Array setzten
-    private void standortInfos()
-    {
-        Textfeld.setText(N_InfoStandort.getInfoStandort(InfoArrayStandort));
-    }
 }

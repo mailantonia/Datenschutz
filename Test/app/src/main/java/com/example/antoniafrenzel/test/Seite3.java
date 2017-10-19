@@ -41,4 +41,10 @@ public class Seite3 extends AppCompatActivity {
         Intent intent = new Intent(this, Informationen.class);
         startActivity(intent);
     }
+
+    public void Infos_Standortlokalisierung(View v) {
+
+        Intent intent = new Intent(this, Informationen_Standort.class);
+        startActivity(intent);
+    }
 }
