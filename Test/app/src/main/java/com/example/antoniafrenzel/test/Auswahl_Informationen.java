@@ -22,7 +22,6 @@ public class Auswahl_Informationen {
                 "Nachteile der Standortlokalisierung von Smartphones:\n - DUDA",
         };
 
-
         public String getInfo(int i)
         {
                 String Wissen = Infos[i];
