@@ -10,13 +10,17 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 public class Informationen extends AppCompatActivity {
 
     private Auswahl_Informationen N_Infos = new Auswahl_Informationen();
     private TextView Textfeld;
+    private TextView Textfeld_Zähler_Folien;
     private Button But_Weiter;
     private Button But_Zurück;
     int InfoArrayNumber = 0;
+    int FolienNummer = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,7 @@ public class Informationen extends AppCompatActivity {
 
         //Variablen zuweisen aus Designer
         Textfeld = (TextView) findViewById(R.id.textView4);
+        Textfeld_Zähler_Folien = (TextView) findViewById(R.id.textView3);
         But_Weiter = (Button) findViewById(R.id.button9);
         But_Zurück = (Button) findViewById(R.id.button10);
 
@@ -33,13 +38,14 @@ public class Informationen extends AppCompatActivity {
 
         //Funktion aufrufen, um Textfeld aus Array zu füllen
         updatedInfos();
+        Folien_Zähler();
     }
 
     //Button Weiter
      public void Button_Click(View v)
      {
          InfoArrayNumber = InfoArrayNumber + 1;
-         if (InfoArrayNumber == 6)
+         if (InfoArrayNumber == (N_Infos.Infos.length-1))
          {
              But_Weiter.setVisibility(View.INVISIBLE);
              But_Zurück.setVisibility(View.VISIBLE);
@@ -51,6 +57,7 @@ public class Informationen extends AppCompatActivity {
          }
 
          updatedInfos();
+         Folien_Zähler();
      }
 
     //Button Zurück
@@ -69,6 +76,7 @@ public class Informationen extends AppCompatActivity {
         }
 
         updatedInfos();
+        Folien_Zähler();
     }
 
     //Button Informationen abbrechen
@@ -82,5 +90,12 @@ public class Informationen extends AppCompatActivity {
     private void updatedInfos()
     {
         Textfeld.setText(N_Infos.getInfo(InfoArrayNumber));
+    }
+
+    //Folien Zähler
+    private void Folien_Zähler()
+    {
+        FolienNummer = InfoArrayNumber +1;
+        Textfeld_Zähler_Folien.setText("Folie " + FolienNummer + " von " + N_Infos.Infos.length);
     }
 }

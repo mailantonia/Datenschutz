@@ -16,11 +16,13 @@ import android.widget.Toast;
 
 public class Informationen_Standort extends AppCompatActivity {
 
-        private Auswahl_Informationen N_InfoStandort = new Auswahl_Informationen();
-        private TextView Textfeld_2;
-        private Button Weiter_Button;
-        private Button Zurück_Button;
-        int InfoArrayStandort = 0;
+    private Auswahl_Informationen N_InfoStandort = new Auswahl_Informationen();
+    private TextView Textfeld_2;
+    private TextView Textfeld_Zähler_Folien;
+    private Button Weiter_Button;
+    private Button Zurück_Button;
+    int InfoArrayStandort = 0;
+    int FolienNummer = 0;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class Informationen_Standort extends AppCompatActivity {
 
             //Variablen zuweisen aus Designer
             Textfeld_2 = (TextView) findViewById(R.id.textView4);
+            Textfeld_Zähler_Folien = (TextView) findViewById(R.id.textView3);
             Weiter_Button = (Button) findViewById(R.id.button9);
             Zurück_Button = (Button) findViewById(R.id.button10);
 
@@ -37,13 +40,14 @@ public class Informationen_Standort extends AppCompatActivity {
 
             //Funktion aufrufen, um Textfeld aus Array zu füllen
             standortInfos();
+            Folien_Zähler();
         }
 
     //Button Weiter
     public void Button_Click(View v)
     {
         InfoArrayStandort = InfoArrayStandort + 1;
-        if (InfoArrayStandort == 11)
+        if (InfoArrayStandort == (N_InfoStandort.Standort.length-1))
         {
             Weiter_Button.setVisibility(View.INVISIBLE);
             Zurück_Button.setVisibility(View.VISIBLE);
@@ -55,6 +59,7 @@ public class Informationen_Standort extends AppCompatActivity {
         }
 
         standortInfos();
+        Folien_Zähler();
     }
 
     //Button Zurück
@@ -73,6 +78,7 @@ public class Informationen_Standort extends AppCompatActivity {
         }
 
         standortInfos();
+        Folien_Zähler();
     }
 
     //Button Informationen abbrechen
@@ -87,4 +93,11 @@ public class Informationen_Standort extends AppCompatActivity {
      {
          Textfeld_2.setText(N_InfoStandort.getInfoStandort(InfoArrayStandort));
      }
+
+    //Folien Zähler
+    private void Folien_Zähler()
+    {
+        FolienNummer = InfoArrayStandort +1;
+        Textfeld_Zähler_Folien.setText("Folie " + FolienNummer + " von " + N_InfoStandort.Standort.length);
+    }
 }

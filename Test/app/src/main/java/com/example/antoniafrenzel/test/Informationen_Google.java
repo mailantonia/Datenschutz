@@ -18,9 +18,11 @@ public class Informationen_Google extends AppCompatActivity {
 
     private Auswahl_Informationen N_InfoGoogle = new Auswahl_Informationen();
     private TextView Textfeld_2;
+    private TextView Textfeld_Zähler_Folien;
     private Button Weiter_Button;
     private Button Zurück_Button;
     int InfoArrayGoogle = 0;
+    int FolienNummer = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class Informationen_Google extends AppCompatActivity {
 
         //Variablen zuweisen aus Designer
         Textfeld_2 = (TextView) findViewById(R.id.textView4);
+        Textfeld_Zähler_Folien = (TextView) findViewById(R.id.textView3);
         Weiter_Button = (Button) findViewById(R.id.button9);
         Zurück_Button = (Button) findViewById(R.id.button10);
 
@@ -37,13 +40,14 @@ public class Informationen_Google extends AppCompatActivity {
 
         //Funktion aufrufen, um Textfeld aus Array zu füllen
         googleInfos();
+        Folien_Zähler();
     }
 
     //Button Weiter
     public void Button_Click(View v)
     {
         InfoArrayGoogle = InfoArrayGoogle + 1;
-        if (InfoArrayGoogle == 5)
+        if (InfoArrayGoogle == (N_InfoGoogle.Google.length-1))
         {
             Weiter_Button.setVisibility(View.INVISIBLE);
             Zurück_Button.setVisibility(View.VISIBLE);
@@ -55,6 +59,7 @@ public class Informationen_Google extends AppCompatActivity {
         }
 
         googleInfos();
+        Folien_Zähler();
     }
 
     //Button Zurück
@@ -73,6 +78,7 @@ public class Informationen_Google extends AppCompatActivity {
         }
 
         googleInfos();
+        Folien_Zähler();
     }
 
     //Button Informationen abbrechen
@@ -86,5 +92,12 @@ public class Informationen_Google extends AppCompatActivity {
     private void googleInfos()
     {
         Textfeld_2.setText(N_InfoGoogle.getInfoGoogle(InfoArrayGoogle));
+    }
+
+    //Folien Zähler
+    private void Folien_Zähler()
+    {
+        FolienNummer = InfoArrayGoogle +1;
+        Textfeld_Zähler_Folien.setText("Folie " + FolienNummer + " von " + N_InfoGoogle.Google.length);
     }
 }

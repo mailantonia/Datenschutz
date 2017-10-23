@@ -12,7 +12,7 @@ public class Auswahl_Informationen {
                 "Durch das „Internet of Things“ wird das Thema Datenschutz immer präsenter, da technische Geräte (beispielsweise Kühlschränke oder Alarmanlagen) über den Anschluss zum Internet persönliche Daten über das Nutzerverhalten weitergeben.",
                 "Studien zeigen, dass Deutsche im Vergleich zu anderen Nationalitäten ein eher ausgeprägtes Bewusstsein zum Datenschutz haben.",
                 "Fazit: Es ist wichtig das Recht auf Privatsphäre jedes Nutzers im Internet zu wahren. Zudem müssen Nutzer über die Weitergabe und das Sammeln ihrer persönlichen Daten ausreichend aufgeklärt werden. Ein Bewusstsein hierfür gilt es zu Schaffen.",
-                "Glückwunsch! \n Du hast alle Informationen zu dem Thema Datenschutz durchgearbeitet! Gehe zurück ins Menü, um weitere Informationen zu erhalten.",
+                "Glückwunsch! \n Du hast alle Informationen zu dem Thema Datenschutz durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
         };
 
         public String Standort[]={
@@ -27,7 +27,7 @@ public class Auswahl_Informationen {
                 "2. Wartung und Verbesserung der Google-Dienste",
                 "3. Anbieten personifizierter Werbung",
                 "4. Umsatzsteigerung des Einzelhandels durch Push-Up Nachrichten und Rabattcoupons",
-                "Glückwunsch! \n Du hast alle Informationen zu dem Thema Standortlokalisierung durchgearbeitet! Gehe zurück ins Menü, um weitere Informationen zu erhalten.",
+                "Glückwunsch! \n Du hast alle Informationen zu dem Thema Standortlokalisierung durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
         };
 
         public String Google[]={
@@ -36,7 +36,7 @@ public class Auswahl_Informationen {
                 "Location-based Services decken das in der mobilen Welt neu entstandene Bedürfnis nach einem Mobilitätsmanagement (Auskünfte zu Preisen, Fahrplänen, Parkplätzen, Reisewarnungen, Unterkünften und Restaurants).",
                 "Als Smartphone Nutzer hat man kaum attraktive Alternativen zu Google, da die meisten Smartphones (Android, IOS) für eine Verknüpfung mit einem Google-Account ausgelegt sind.",
                 "Mit zunehmendem Alter nimmt diese Bereitschaft kontinuierlich ab. So geben bei den 40-49-jährigen nur noch 15,3 Prozent ihren Aufenthaltsort preis und bei den über 60-jährigen lediglich 7,6 Prozent.",
-                "Glückwunsch! \n Du hast alle Informationen zu dem Thema Google Standortlokalisierung durchgearbeitet! Gehe zurück ins Menü, um weitere Informationen zu erhalten.",
+                "Glückwunsch! \n Du hast alle Informationen zu dem Thema Google Standortlokalisierung durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
         };
 
         public String getInfo(int i)
