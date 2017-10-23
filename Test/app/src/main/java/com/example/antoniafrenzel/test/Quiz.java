@@ -105,12 +105,12 @@ public class Quiz extends AppCompatActivity {
             mButtonChoice2.setVisibility(View.INVISIBLE);
             mButtonChoice3.setVisibility(View.INVISIBLE);
             mButtonBack.setText("Zurück");
-            if (mScore == 10) {
+            if (mScore ==10) {
                 mQuestionView.setText("Quiz beendet! \n\n" +
                         "Du hast " + mScore + " von 10 Punkten.\n" +
                         "Du bist ein echter Datenschutzheld. Halte die Augen weiter so offen!");
             }
-            if (mScore <10 && (mScore >5)) {
+            else if (mScore <10 && (mScore >5)) {
                 mQuestionView.setText("Quiz beendet! \n\n" +
                         "Du hast " + mScore + " von 10 Punkten.\n" +
                         "Du bist ein Datenschutzzwerg! Du bist schon auf einem guten Weg, doch halte stehts deine Augen offen, damit deine Daten sicher bleiben!");
