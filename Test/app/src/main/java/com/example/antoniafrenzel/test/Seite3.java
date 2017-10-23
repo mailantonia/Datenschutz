@@ -48,7 +48,7 @@ public class Seite3 extends AppCompatActivity {
 
     public void Infos_Google(View v) {
 
-        Intent intent = new Intent(this, Informationen_Standort.class);
+        Intent intent = new Intent(this, Informationen_Google.class);
         startActivity(intent);
     }
 }

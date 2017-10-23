@@ -39,6 +39,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Informationen" />
         <activity android:name=".Informationen_Standort" />
+        <activity android:name=".Informationen_Google"></activity>
     </application>
 
 </manifest>
