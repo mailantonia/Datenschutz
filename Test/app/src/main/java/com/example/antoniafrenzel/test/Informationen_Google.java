@@ -43,7 +43,7 @@ public class Informationen_Google extends AppCompatActivity {
     public void Button_Click(View v)
     {
         InfoArrayGoogle = InfoArrayGoogle + 1;
-        if (InfoArrayGoogle == 3)
+        if (InfoArrayGoogle == 5)
         {
             Weiter_Button.setVisibility(View.INVISIBLE);
             Zurück_Button.setVisibility(View.VISIBLE);

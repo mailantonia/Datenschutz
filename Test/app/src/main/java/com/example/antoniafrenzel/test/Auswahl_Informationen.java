@@ -31,10 +31,12 @@ public class Auswahl_Informationen {
         };
 
         public String Google[]={
-                "Informationen",
-                "zu",
-                "Google",
-                "Test",
+                "Laut einer Umfrage der Datenbank Statista nutzen 66 Prozent der Deutschen ab 16 Jahren Google-Dienste täglich und 26 Prozent mehrmals wöchentlich.",
+                "Das Angebot der Google-Applikationen für Smartphone-Nutzer umfasst Google Maps, Gmail, YouTube, Google Drive und Google Plus, um nur einige von ihnen zu nennen.",
+                "Location-based Services decken das in der mobilen Welt neu entstandene Bedürfnis nach einem Mobilitätsmanagement (Auskünfte zu Preisen, Fahrplänen, Parkplätzen, Reisewarnungen, Unterkünften und Restaurants).",
+                "Als Smartphone Nutzer hat man kaum attraktive Alternativen zu Google, da die meisten Smartphones (Android, IOS) für eine Verknüpfung mit einem Google-Account ausgelegt sind.",
+                "Mit zunehmendem Alter nimmt diese Bereitschaft kontinuierlich ab. So geben bei den 40-49-jährigen nur noch 15,3 Prozent ihren Aufenthaltsort preis und bei den über 60-jährigen lediglich 7,6 Prozent.",
+                "Glückwunsch! \n Du hast alle Informationen zu dem Thema Google Standortlokalisierung durchgearbeitet! Gehe zurück ins Menü, um weitere Informationen zu erhalten.",
         };
 
         public String getInfo(int i)
