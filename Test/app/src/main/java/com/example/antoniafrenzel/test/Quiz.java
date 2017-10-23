@@ -25,7 +25,7 @@ public class Quiz extends AppCompatActivity {
     private int AnzFragen = 0;
     private String u="unwichtig";
     private int Zufallszahl = 0;
-    private int Hilfsfeld[mAuswahlFragen.mQuestions.length]={0};
+  //  private int Hilfsfeld[mAuswahlFragen.mQuestions.length]={0};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,13 +94,13 @@ public class Quiz extends AppCompatActivity {
         //Ende Button3
     }
     private int createZufall(){
-        while (1){
+       // while (1){
             Zufallszahl= (int) (Math.random()*(mAuswahlFragen.mQuestions.length - 0));//Maximale Zahl minus minimale Zahl
-            if (Hilfsfeld[Zufallszahl]==0){
-                break;
-            }
-        }
-        Hilfsfeld[Zufallszahl]=1;
+           // if (Hilfsfeld[Zufallszahl]==0){
+              //  break;
+           // }
+      //  }
+      //  Hilfsfeld[Zufallszahl]=1;
         return Zufallszahl;
     }
     private void updateQuestions(){
@@ -154,7 +154,7 @@ public class Quiz extends AppCompatActivity {
     private void updateScore (int point){
         mScoreView.setText(""+mScore);
     }
-    
+
     public void startNewActivity(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
