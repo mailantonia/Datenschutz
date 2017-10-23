@@ -117,7 +117,7 @@ public class Quiz extends AppCompatActivity {
             }
         }
         else {
-            mAnzFrage.setText(mQuestionNumber+1 + ". Frage in insgesamt " + mAuswahlFragen.mQuestions.length);
+            mAnzFrage.setText(mQuestionNumber+1 + ". Frage in insgesamt " 10);
             mQuestionView.setText(mAuswahlFragen.getFrage(mQuestionNumber));
             mButtonChoice1.setText(mAuswahlFragen.getAuswahl1(mQuestionNumber));
             mButtonChoice2.setText(mAuswahlFragen.getAuswahl2(mQuestionNumber));
