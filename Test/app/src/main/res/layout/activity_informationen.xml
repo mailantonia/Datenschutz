@@ -19,7 +19,7 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_green_light"
         android:onClick="Button_Click"
@@ -29,7 +29,7 @@
             android:id="@+id/button10"
             android:backgroundTint="@android:color/holo_green_light"
             android:onClick="Button_Click_Zurück"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Zurück" />
 
@@ -37,7 +37,7 @@
             android:id="@+id/button11"
             android:backgroundTint="@android:color/holo_green_light"
             android:onClick="starttoInformation"
-            android:layout_width="match_parent"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Informationen abbrechen" />
 

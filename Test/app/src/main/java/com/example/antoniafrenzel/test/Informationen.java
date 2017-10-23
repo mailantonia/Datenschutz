@@ -81,5 +81,4 @@ public class Informationen extends AppCompatActivity {
     {
         Textfeld.setText(N_Infos.getInfo(InfoArrayNumber));
     }
-
 }

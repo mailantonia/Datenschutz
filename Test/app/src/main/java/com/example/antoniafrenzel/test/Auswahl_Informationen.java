@@ -22,15 +22,29 @@ public class Auswahl_Informationen {
                 "Nachteile der Standortlokalisierung von Smartphones:\n - DUDA",
         };
 
+        public String Google[]={
+                "",
+                "",
+                "",
+                "",
+                "",
+        };
+
         public String getInfo(int i)
         {
-                String Wissen = Infos[i];
-                return Wissen;
+            String Wissen = Infos[i];
+            return Wissen;
         }
 
         public String getInfoStandort(int x)
         {
-                String InfoStandort = Standort[x];
-                return InfoStandort;
+            String InfoStandort = Standort[x];
+            return InfoStandort;
+        }
+
+        public String getInfoGoogle(int a)
+        {
+            String InfoGoogle = Google[a];
+            return InfoGoogle;
         }
 }

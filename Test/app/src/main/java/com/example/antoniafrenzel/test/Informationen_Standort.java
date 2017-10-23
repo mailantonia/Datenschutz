@@ -16,25 +16,25 @@ import android.widget.Toast;
 
 public class Informationen_Standort extends AppCompatActivity {
 
-//        private Auswahl_Informationen N_InfoStandort = new Auswahl_Informationen();
-//        private TextView Textfeld_2;
-//        int InfoArrayStandort = 1;
-//
-//        @Override
-//        protected void onCreate(Bundle savedInstanceState) {
-//            super.onCreate(savedInstanceState);
-//            setContentView(R.layout.activity_informationen);
-//
-//            //Variablen zuweisen aus Designer
-//            Textfeld_2 = (TextView) findViewById(R.id.textView9);
-//
-//            //Funktion aufrufen, um Textfeld aus Array zu füllen
-//            standortInfos();
-//        }
-//
-//        //Text aus Standort Array setzten
-//        private void standortInfos()
-//        {
-//            Textfeld_2.setText(N_InfoStandort.getInfoStandort(InfoArrayStandort));
-//        }
+        private Auswahl_Informationen N_InfoStandort = new Auswahl_Informationen();
+        //private TextView Textfeld_2;
+        int InfoArrayStandort = 1;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_informationen);
+
+            //Variablen zuweisen aus Designer
+           // Textfeld_2 = (TextView) findViewById(R.id.textView9);
+
+            //Funktion aufrufen, um Textfeld aus Array zu füllen
+            standortInfos();
+        }
+
+        //Text aus Standort Array setzten
+        private void standortInfos()
+        {
+           // Textfeld_2.setText(N_InfoStandort.getInfoStandort(InfoArrayStandort));
+        }
 }
