@@ -25,7 +25,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Seite3"
-            android:label="@string/title_activity_seite3"
+            android:label="Informationen"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -37,9 +37,15 @@
             android:name=".Check"
             android:label="@string/title_activity_check"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Informationen" />
-        <activity android:name=".Informationen_Standort" />
-        <activity android:name=".Informationen_Google"></activity>
+        <activity
+            android:name=".Informationen"
+            android:label="Informationen"/>
+        <activity
+            android:name="Informationen_Standort"
+            android:label="Informationen"/>
+        <activity
+            android:name=".Informationen_Google"
+            android:label="Informationen"></activity>
     </application>
 
 </manifest>
