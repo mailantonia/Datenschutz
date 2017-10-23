@@ -22,9 +22,7 @@ public class Quiz extends AppCompatActivity {
     private String mAnswer;
     private int mScore = 0;
     private int mQuestionNumber = 0;
-    private int AnzFragen = 0;
     private String u="unwichtig";
-    private int Zufallszahl = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,39 +90,34 @@ public class Quiz extends AppCompatActivity {
         });
         //Ende Button3
     }
-    private int createZufall(){
-        Zufallszahl= (int) (Math.random()*(mAuswahlFragen.mQuestions.length - 0));//Maximale Zahl minus minimale Zahl
-        return Zufallszahl;
-    }
     private void updateQuestions(){
 
-        if (AnzFragen==10)
+        if (mQuestionNumber==mAuswahlFragen.mQuestions.length)
         {
             mAnzFrage.setVisibility(View.INVISIBLE);
             mButtonChoice1.setVisibility(View.INVISIBLE);
             mButtonChoice2.setVisibility(View.INVISIBLE);
             mButtonChoice3.setVisibility(View.INVISIBLE);
             mButtonBack.setText("Zurück");
-            if (mScore == 10) {
+            if (mScore == mAuswahlFragen.mQuestions.length) {
                 mQuestionView.setText("Quiz beendet! \n\n" +
-                        "Du hast " + mScore + " von 10 Punkten.\n" +
+                        "Du hast " + mScore + " von " + mAuswahlFragen.mQuestions.length + " Punkten.\n" +
                         "Du bist ein echter Datenschutzheld. Halte die Augen weiter so offen!");
             }
-            if (mScore <10 && (mScore >5)) {
+            if (mScore <mAuswahlFragen.mQuestions.length && (mScore >(mAuswahlFragen.mQuestions.length-5))) {
                 mQuestionView.setText("Quiz beendet! \n\n" +
-                        "Du hast " + mScore + " von 10 Punkten.\n" +
+                        "Du hast " + mScore + " von " + mAuswahlFragen.mQuestions.length + " Punkten.\n" +
                         "Du bist ein Datenschutzzwerg! Du bist schon auf einem guten Weg, doch halte stehts deine Augen offen, damit deine Daten sicher bleiben!");
             }
             else
             {
                 mQuestionView.setText("Quiz beendet! \n\n" +
-                        "Du hast " + mScore + " von 10 Punkten.\n" +
+                        "Du hast " + mScore + " von " + mAuswahlFragen.mQuestions.length + " Punkten.\n" +
                         "Du bist ein Datenschutzmuffel. Halte deine Daten gut im Blick, bevor sie weg sind!");
             }
         }
         else {
-            mAnzFrage.setText(AnzFragen+1 + ". Frage in insgesamt " + 10);
-            mQuestionNumber= createZufall();
+            mAnzFrage.setText(mQuestionNumber+1 + ". Frage in insgesamt " + mAuswahlFragen.mQuestions.length);
             mQuestionView.setText(mAuswahlFragen.getFrage(mQuestionNumber));
             mButtonChoice1.setText(mAuswahlFragen.getAuswahl1(mQuestionNumber));
             mButtonChoice2.setText(mAuswahlFragen.getAuswahl2(mQuestionNumber));
@@ -138,8 +131,7 @@ public class Quiz extends AppCompatActivity {
                 mButtonChoice3.setText(mAuswahlFragen.getAuswahl3(mQuestionNumber));
             }
             mAnswer = mAuswahlFragen.getCorrectAnswer(mQuestionNumber);
-            AnzFragen++;
-            //mQuestionNumber++;
+            mQuestionNumber++;
         }
     }
     private void updateScore (int point){
