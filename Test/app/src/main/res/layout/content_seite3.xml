@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:backgroundTint="@android:color/holo_green_light"
-        android:text="Standortlokalisierung."
+        android:text="Standortlokalisierung"
         android:onClick="Infos_Standortlokalisierung"
         app:layout_constraintTop_toBottomOf="@+id/button1"
         tools:layout_editor_absoluteX="8dp" />
@@ -65,7 +65,7 @@
         android:layout_width="304dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_green_light"
-        android:text="Google Standortlokalisierung."
+        android:text="Google Standortlokalisierung"
         android:onClick="Infos_Google"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:layout_editor_absoluteX="8dp" />

@@ -8,7 +8,18 @@
     android:orientation="vertical"
     android:gravity="center">
 
-        <TextView
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
+        android:padding="12dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="-14dp"
+        app:srcCompat="@mipmap/ausrufezeichen_informationen" />
+
+
+    <TextView
             android:id="@+id/textView4"
             android:layout_width="300dp"
             android:layout_height="266dp"
@@ -39,6 +50,6 @@
             android:onClick="starttoInformation"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Informationen abbrechen" />
+            android:text="Zurück in das Menü" />
 
 </LinearLayout>

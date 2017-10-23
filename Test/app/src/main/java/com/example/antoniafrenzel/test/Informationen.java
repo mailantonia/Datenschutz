@@ -16,8 +16,7 @@ public class Informationen extends AppCompatActivity {
     private TextView Textfeld;
     private Button But_Weiter;
     private Button But_Zurück;
-    int InfoArrayNumber = 1;
-    int InfoArrayStandort = 1;
+    int InfoArrayNumber = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +28,9 @@ public class Informationen extends AppCompatActivity {
         But_Weiter = (Button) findViewById(R.id.button9);
         But_Zurück = (Button) findViewById(R.id.button10);
 
+        But_Weiter.setVisibility(View.VISIBLE);
+        But_Zurück.setVisibility(View.INVISIBLE);
+
         //Funktion aufrufen, um Textfeld aus Array zu füllen
         updatedInfos();
     }
@@ -37,7 +39,7 @@ public class Informationen extends AppCompatActivity {
      public void Button_Click(View v)
      {
          InfoArrayNumber = InfoArrayNumber + 1;
-         if (InfoArrayNumber == 7)
+         if (InfoArrayNumber == 6)
          {
              But_Weiter.setVisibility(View.INVISIBLE);
              But_Zurück.setVisibility(View.VISIBLE);
