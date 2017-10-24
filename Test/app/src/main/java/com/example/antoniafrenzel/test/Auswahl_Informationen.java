@@ -16,27 +16,27 @@ public class Auswahl_Informationen {
         };
 
         public String Standort[]={
-                "Vorteile der Standortlokalisierung von Smartphones:",
-                "1. Navigationsgerät im Auto",
-                "2. Wetterapplikationen",
-                "3. Echtzeitinformationen zu Fahrplänen",
-                "4. Informationen zu Restaurants/Bars in naher Umgebung",
-                "5. Katastrophen-Warnungen",
-                "Nachteile der Standortlokalisierung von Smartphones:",
-                "1. Sammeln persönlicher standortbezogener Daten (Durchleuchten des Nutzers)",
-                "2. Wartung und Verbesserung der Google-Dienste",
-                "3. Anbieten personifizierter Werbung",
-                "4. Umsatzsteigerung des Einzelhandels durch Push-Up Nachrichten und Rabattcoupons",
-                "Glückwunsch! \n Du hast alle Informationen zu dem Thema Standortlokalisierung durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
+                "VORTEILE \n\n Der Standortlokalisierung von Smartphones.",
+                "1. \n\nNavigationsgerät im Auto",
+                "2. \n\nWetterapplikationen",
+                "3. \n\nEchtzeitinformationen zu Fahrplänen",
+                "4. \n\nInformationen zu Restaurants/Bars in naher Umgebung",
+                "5. \n\nKatastrophen-Warnungen",
+                "NACHTEILE \n\n Der Standortlokalisierung von Smartphones.",
+                "1. \n\nSammeln persönlicher standortbezogener Daten (Durchleuchten des Nutzers)",
+                "2. \n\nAnbieten personifizierter Werbung",
+                "3. \n\nUmsatzsteigerung des Einzelhandels durch Push-Up Nachrichten und Rabattcoupons",
+                "GLÜCKWUNSCH! \n\n Du hast alle Informationen zu dem Thema Standortlokalisierung durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
         };
 
         public String Google[]={
-                "Laut einer Umfrage der Datenbank Statista nutzen 66 Prozent der Deutschen ab 16 Jahren Google-Dienste täglich und 26 Prozent mehrmals wöchentlich.",
-                "Das Angebot der Google-Applikationen für Smartphone-Nutzer umfasst Google Maps, Gmail, YouTube, Google Drive und Google Plus, um nur einige von ihnen zu nennen.",
+                "FAKTEN \n\n Zu der Standortlokalisierung von Google Applikationen.",
+                "Laut einer Umfrage der Datenbank Statista nutzen 66 Prozent der Deutschen ab 16 Jahren Google-Dienste täglich.",
+                "Das Angebot der Google-Applikationen für Smartphone-Nutzer umfasst Google Maps, Gmail, YouTube, Google Drive und Google Plus (um nur einige der bekanntesten zu nennen).",
                 "Location-based Services decken das in der mobilen Welt neu entstandene Bedürfnis nach einem Mobilitätsmanagement (Auskünfte zu Preisen, Fahrplänen, Parkplätzen, Reisewarnungen, Unterkünften und Restaurants).",
                 "Als Smartphone Nutzer hat man kaum attraktive Alternativen zu Google, da die meisten Smartphones (Android, IOS) für eine Verknüpfung mit einem Google-Account ausgelegt sind.",
-                "Mit zunehmendem Alter nimmt diese Bereitschaft kontinuierlich ab. So geben bei den 40-49-jährigen nur noch 15,3 Prozent ihren Aufenthaltsort preis und bei den über 60-jährigen lediglich 7,6 Prozent.",
-                "Glückwunsch! \n Du hast alle Informationen zu dem Thema Google Standortlokalisierung durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
+                "Mit zunehmendem Alter nimmt diese Bereitschaft kontinuierlich ab, seinen Aufenthaltsort über das Smartphone preiszugeben.",
+                "GLÜCKWUNSCH! \n\n Du hast alle Informationen zu dem Thema Google Standortlokalisierung durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
         };
 
         public String getInfo(int i)

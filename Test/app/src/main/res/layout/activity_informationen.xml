@@ -44,7 +44,7 @@
         android:layout_height="250dp"
         android:gravity="center"
         android:text="TextView"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@color/colorPrimary"
         android:textSize="18dp" />
 
     <Button

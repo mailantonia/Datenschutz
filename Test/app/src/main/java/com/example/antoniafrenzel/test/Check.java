@@ -7,30 +7,19 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 
 public class Check extends AppCompatActivity {
+
+    private Button B1_Standortverlauf;
+    private Button B2_Mail_Check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        B1_Standortverlauf = (Button) findViewById(R.id.button9);
+        B2_Mail_Check = (Button) findViewById(R.id.button10);
     }
-    public void startNewActivity(View v) {
-
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-
-    }
-
 }
