@@ -16,7 +16,7 @@ public class Seite3 extends AppCompatActivity {
         setContentView(R.layout.activity_seite3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        
+
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 }
 

@@ -1,6 +1,10 @@
 package com.example.antoniafrenzel.test;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v4.app.DialogFragment;
+import android.support.v7.app.AlertDialog;  //evtl falsch...
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -156,7 +160,29 @@ public class Quiz extends AppCompatActivity {
     }
 
     public void startNewActivity(View v) {
-        Intent intent = new Intent(this, MainActivity.class);
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("Quiz abbrechen");
+        alertDialog.setMessage("Möchtest du das Quiz wirklich abbrechen?");
+        alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL,"Ja",
+                new DialogInterface.OnClickListener(){
+                    public  void onClick(DialogInterface dialog, int witch){
+                        dialog.dismiss();
+                        goBackToMainActivity();
+                    }
+                });
+        alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE,"Nein",
+                new DialogInterface.OnClickListener(){
+                    public  void onClick(DialogInterface dialog, int witch){
+                        dialog.cancel();
+                    }
+                });
+        alertDialog.show();
+        //Intent intent = new Intent(this, MainActivity.class);
+        //startActivity(intent);
+    }
+    private  void goBackToMainActivity(){
+        Intent intent = new Intent(this, SecondActivity.class);
         startActivity(intent);
     }
 }
+
