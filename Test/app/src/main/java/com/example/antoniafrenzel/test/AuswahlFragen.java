@@ -17,7 +17,13 @@ public class AuswahlFragen {
             "Bei der Standortsuche wird zwischen Location-Tracking-Services und Position-Aware-Services unterschieden.",
             "Die Hardwaresensoren zur Standortlokalisierung sind so im Handy verbaut, dass weder Nutzer noch Entwickler Zugriff darauf haben.",
             "Die Standortlokalisierung auf dem Land ist genauer als in der Stadt.",
-            "Google hat zum Erfassen von Material für Street-View mit seinen Fahrzeugen auch Daten von WLAN-Netzen mit erfasst."
+            "Google hat zum Erfassen von Material für Street-View mit seinen Fahrzeugen auch Daten von WLAN-Netzen mit erfasst.",
+            "Jeder der das Internet nutzt hinterlässt Spuren über seine Identität und über sein Nutzerverhalten.",
+            "Warum gehen Internetnutzer häufig unachtsam mit ihren persönlichen Daten im Internet um?",
+            "Was ist eine große Gefahr des “Internet of Things” (IoT)?",
+            "Deutsche haben gegenüber anderen Nationalitäten ein eher ausgeprägtes Bewusstsein zum Datenschutz.",
+            "Durch das Sammeln von Daten gibt es keine Umsatzsteigerung des Einzelhandels durch Push-Up Nachrichten und Rabattcoupons.",
+            "Wie viel Prozent der Deutschen ab 16 Jahren nutzen die Google-Dienste täglich?"
     };
     private String mAuswahl[][]={
             //Frage 1
@@ -51,15 +57,31 @@ public class AuswahlFragen {
             //11
             {"Wahr","Falsch","unwichtig"},
             //12
-            {"Wahr","Falsch","unwichtig"}
+            {"Wahr","Falsch","unwichtig"},
+            //13
+            {"Wahr","Falsch","unwichtig"},
+            //14
+            {"Daten werden durch das Bundesdatenschutzgesetz geschützt.",
+                    "Blindes Vertrauen in Anbieter und Gefühl der Anonymität.",
+            "Nutzer werden dazu gezwungen."},
+            //15
+            {"Geräte gehen öfters kaputt.","Herkömmliche Haushaltsgeräte werden unerschwinglich.","Alle IoT-Gegenstände können persönliche Daten über das Nutzerverhalten weitergeben."},
+            //16
+            {"Wahr","Falsch","unwichtig"},
+            //17
+            {"Wahr","Falsch","unwichtig"},
+            //18
+            {"23 Prozent","66 Prozent","71 Prozent"}
 
-    };
+    }; //{"","",""}
     private String mAntwort[]={
             "Jede Person hat das Recht auf Achtung ihres Privats- und Familienlebens, ihrer Wohnung und ihrer Korrespondenz.",
             "4,5 Prozent",
             "Videoüberwachungsverbesserungsgesetz",
             "Dienste, die die geografische Position einer Person genau bestimmen könne.",
-            "Tourismusbranche", "Falsch", "Wahr","Bis zu 10 cm", "Wahr", "Wahr", "Falsch", "Wahr"};
+            "Tourismusbranche", "Falsch", "Wahr","Bis zu 10 cm", "Wahr", "Wahr", "Falsch", "Wahr","Wahr",
+            "Blindes Vertrauen in Anbieter und Gefühl der Anonymität.","Alle IoT-Gegenstände können persönliche Daten über das Nutzerverhalten weitergeben.",
+            "Wahr","Falsch", "66 Prozent"};
 
     public String getFrage(int a){
         String Frage=mQuestions[a];
