@@ -17,11 +17,12 @@ public class Auswahl_Informationen {
 
         public String Standort[]={
                 "VORTEILE \n\n Der Standortlokalisierung von Smartphones.",
-                "1. \n\nNavigationsgerät im Auto",
+                "1. \n\nNavigationsgerät",
                 "2. \n\nWetterapplikationen",
                 "3. \n\nEchtzeitinformationen zu Fahrplänen",
-                "4. \n\nInformationen zu Restaurants/Bars in naher Umgebung",
+                "4. \n\nInformationen zu Restaurants, Bars, Hotels etc. in naher Umgebung",
                 "5. \n\nKatastrophen-Warnungen",
+                "6. \n\nFind-your-Phone Applikation, die das Handy bei einem Diebstahl ortet",
                 "NACHTEILE \n\n Der Standortlokalisierung von Smartphones.",
                 "1. \n\nSammeln persönlicher standortbezogener Daten (Durchleuchten des Nutzers)",
                 "2. \n\nAnbieten personifizierter Werbung",
@@ -35,6 +36,8 @@ public class Auswahl_Informationen {
                 "Das Angebot der Google-Applikationen für Smartphone-Nutzer umfasst Google Maps, Gmail, YouTube, Google Drive und Google Plus (um nur einige der bekanntesten zu nennen).",
                 "Location-based Services decken das in der mobilen Welt neu entstandene Bedürfnis nach einem Mobilitätsmanagement (Auskünfte zu Preisen, Fahrplänen, Parkplätzen, Reisewarnungen, Unterkünften und Restaurants).",
                 "Als Smartphone Nutzer hat man kaum attraktive Alternativen zu Google, da die meisten Smartphones (Android, IOS) für eine Verknüpfung mit einem Google-Account ausgelegt sind.",
+                "Der Standort wird nicht nur beim Verwenden der Applikationen erfasst und gespeichert. Vielmehr ruft Google in regelmäßigen Abständen den Aufenthaltsort der Anwender ab – auch wenn diese die Applikationen in dem Moment nicht aktiv verwendet werden.",
+                "Der Nutzer muss sich fragen, warum viele Dienste, die in der Entwicklung sehr teuer sind, letztendlich kostenlos genutzt werden können: Die erhobenen Daten der Nutzer sind das Kaptital von Google (also: persönliche Daten als Gegenleistung zur kostenlosen Nutzung der Google Dienste).",
                 "Mit zunehmendem Alter nimmt diese Bereitschaft kontinuierlich ab, seinen Aufenthaltsort über das Smartphone preiszugeben.",
                 "GLÜCKWUNSCH! \n\n Du hast alle Informationen zu dem Thema Google Standortlokalisierung durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
         };
