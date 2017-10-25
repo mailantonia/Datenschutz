@@ -11,6 +11,7 @@ public class Check_button_mail extends AppCompatActivity {
     private TextView Kapitel;
     private TextView Teaser;
     private TextView Informationstext;
+    private TextView Link;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +22,13 @@ public class Check_button_mail extends AppCompatActivity {
         Kapitel.setText("E-Mail Sicherheitscheck");
 
         Teaser = (TextView) findViewById(R.id.textView6);
-        Teaser.setText("Wirst Du mit Werbe-Emails zugespammt? Oder liegen regelmäßig unseriöse Rechnungen und Gewinnspiele in Deinem Posteingang? Dann mache jetzt den E-Mail Sicherheitscheck!");
+        Teaser.setText("Wurden schon einmal E-Mails in Deinem Namen ohne Dein Wissen versendet? Oder wurde Dein Facebook-Account gehackt? Dann mache jetzt den E-Mail Sicherheitscheck!");
 
         Informationstext = (TextView) findViewById(R.id.textView5);
-        Informationstext.setText("Hier findest Du den Link: www.google.de");
+        Informationstext.setText("Häufig werden E-Mailadressen zum Ziel von Hackerangriffen. Durch den illegalen Zugang zu privaten E-Mail Accounts können Hacker diese zum Versand von SPAM-Mails missbrauchen. Zudem besteht die Gefahr, dass Dein Zugang den sozialen Netzwerken und Online-Shops, die mit den Mailadressen verknüpft sind nicht mehr gesichert ist. Daher ist es wichtig sein privates Konto gut zu schützen. Teste unter folgendem Link, ob Dein Mail-Account schon einmal zum Ziel eines Hackerangriffs wurde: \n");
+
+        Link = (TextView) findViewById(R.id.textView7);
+        Link.setText("https://haveibeenpwned.com/");
     }
 
     //Zurück in das Menü
