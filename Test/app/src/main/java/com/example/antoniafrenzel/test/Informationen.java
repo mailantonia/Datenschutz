@@ -14,6 +14,7 @@ import org.w3c.dom.Text;
 
 public class Informationen extends AppCompatActivity {
 
+    //Initialisierung der Variablen
     private Auswahl_Informationen N_Infos = new Auswahl_Informationen();
     private TextView Textfeld;
     private TextView Textfeld_Zähler_Folien;

@@ -49,6 +49,7 @@
 
         <activity android:name=".Check_button_mail"></activity>
         <activity android:name=".Check_button_standortverlauf"></activity>
+        <activity android:name=".Check_button_passwort"></activity>
 
     </application>
 

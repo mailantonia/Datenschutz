@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class Check_button_mail extends AppCompatActivity {
 
+    //Initialisierung der Variablen
     private TextView Kapitel;
     private TextView Teaser;
     private TextView Informationstext;
@@ -31,7 +32,7 @@ public class Check_button_mail extends AppCompatActivity {
         Link.setText("https://haveibeenpwned.com/");
     }
 
-    //Zurück in das Menü
+    //Zurück in das Check-Dich-Menü
     public void goback(View v)
     {
         Intent intent = new Intent(this, Check.class);

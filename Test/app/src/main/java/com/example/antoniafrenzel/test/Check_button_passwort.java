@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class Check_button_passwort extends AppCompatActivity {
 
+    //Initialisierung der Variablen
     private TextView Kapitel;
     private TextView Teaser;
     private TextView Informationstext;
@@ -22,16 +23,16 @@ public class Check_button_passwort extends AppCompatActivity {
         Kapitel.setText("Passwort Sicherheitscheck");
 
         Teaser = (TextView) findViewById(R.id.textView6);
-        Teaser.setText("Wie sicher ist Dein Passwort?");
+        Teaser.setText("Häufig vergeben Internetnutzer spontan ein Passwort, dass sie sich leicht merken können oder bereits mehrfach als Passwort zu anderen Accounts vergeben haben. Das kann zu Sicherheitslücken führen. Wie sicher ist Dein Passwort?");
 
         Informationstext = (TextView) findViewById(R.id.textView5);
-        Informationstext.setText("Teste die Sicherheit Deines Passwortes unter folgendem Link: \n");
+        Informationstext.setText("\n1. Ein sicheres Passwort besteht aus Klein- und Großbuchstaben sowie Zahlen und Sonderzeichen.\n\n2. Verwende kein geläufiges Wort sondern eine Abfolge von Buchstaben, die keinen Sinn ergeben.\n\n3. Tipp: Merke Dir beispielsweise einen Satz und verwende die Anfangsbuchstaben der Wörter als Passwort. \n\nTeste die Sicherheit Deines persönlichen Passwortes unter folgendem Link:\n");
 
         Link = (TextView) findViewById(R.id.textView7);
         Link.setText("https://checkdeinpasswort.de/");
     }
 
-    //Zurück in das Menü
+    //Zurück in das Check-Dich-Menü
     public void goback(View v)
     {
         Intent intent = new Intent(this, Check.class);

@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 public class Informationen_Google extends AppCompatActivity {
 
+    //Initialisierung der Variablen
     private Auswahl_Informationen N_InfoGoogle = new Auswahl_Informationen();
     private TextView Textfeld_2;
     private TextView Textfeld_Zähler_Folien;
