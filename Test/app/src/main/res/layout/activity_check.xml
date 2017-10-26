@@ -64,12 +64,8 @@
         android:onClick="Mail_check"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:onClick="StartNewAktivitaeten"
         android:textColor="@android:color/background_light"
         android:text="E-Mail Sicherheitscheck" />
-=======
-        android:text="Google - meine Aktivitäten" />
->>>>>>> 18f5100d60a31187642cb841b5ffbc5ddac92bed
 
     <Button
         android:id="@+id/button13"
