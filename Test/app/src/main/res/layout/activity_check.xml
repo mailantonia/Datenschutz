@@ -45,8 +45,9 @@
         android:id="@+id/button9"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:onClick="StartNewZeitachse"
         android:backgroundTint="@android:color/holo_orange_light"
-        android:text=" Dein Google Standort Profil"
+        android:text="Google Zeitachse"
         android:textColor="@android:color/background_light" />
 
     <Button

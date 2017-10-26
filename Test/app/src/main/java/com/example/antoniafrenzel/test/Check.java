@@ -20,6 +20,12 @@ public class Check extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void StartNewZeitachse(View v) {
+
+        Intent intent = new Intent(this, Check_button_standortverlauf.class);
+        startActivity(intent);
+    }
+
     public void Zurück(View v) {
 
         Intent intent = new Intent(this, MainActivity.class);

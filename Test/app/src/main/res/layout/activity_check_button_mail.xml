@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.example.antoniafrenzel.test.Check_button_mail">
+    tools:context="com.example.antoniafrenzel.test.Check">
 
     <RelativeLayout
         android:layout_width="350dp"
