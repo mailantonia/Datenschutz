@@ -16,7 +16,7 @@ public class Check_button_standortverlauf extends AppCompatActivity {
     }
 
     //Zurück in das Menü
-    public void goback(View v)
+    public void gehe_zurück(View v)
     {
         Intent intent = new Intent(this, Check.class);
         startActivity(intent);
