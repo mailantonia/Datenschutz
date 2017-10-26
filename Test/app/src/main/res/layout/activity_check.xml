@@ -11,8 +11,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:padding="8dp"
+        android:layout_height="150dp"
+        android:padding="15dp"
         android:layout_marginBottom="0dp">
 
         <TextView
@@ -22,6 +22,7 @@
             android:padding="12dp"
             android:layout_gravity="right"
             android:textSize="20sp"
+            android:gravity="center"
             android:textColor="@android:color/holo_orange_light"
             android:layout_alignParentRight="true"
             android:text="Dein Datenschutz Check" />
@@ -45,7 +46,6 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/holo_orange_light"
-        android:onClick="Standortverlauf"
         android:text=" Dein Google Standort Profil"
         android:textColor="@android:color/background_light" />
 
@@ -59,9 +59,25 @@
         android:text="E-Mail Sicherheitscheck" />
 
     <Button
+        android:id="@+id/button12"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:text="Weiterer Button" />
+
+    <Button
+        android:id="@+id/button13"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:text="Weiterer Button" />
+
+    <Button
         android:id="@+id/button11"
         android:backgroundTint="@android:color/holo_orange_light"
-        android:onClick="Button_Click_Zurück"
+        android:onClick="Zurück"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textColor="@android:color/background_light"

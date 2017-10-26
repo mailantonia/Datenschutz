@@ -19,4 +19,10 @@ public class Check extends AppCompatActivity {
         Intent intent = new Intent(this, Check_button_mail.class);
         startActivity(intent);
     }
+
+    public void Zurück(View v) {
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }
