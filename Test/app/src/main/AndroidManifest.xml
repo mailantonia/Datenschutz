@@ -35,7 +35,7 @@
         <activity android:name=".Quiz" />
         <activity
             android:name=".Check"
-            android:label="Check Dich"
+            android:label="@string/title_activity_check"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Informationen"
@@ -46,7 +46,7 @@
         <activity
             android:name=".Informationen_Google"
             android:label="Informationen" />
-        <activity android:name=".Check_button_mail"></activity>
+        <activity android:name=".Impressum"></activity>
     </application>
 
 </manifest>
