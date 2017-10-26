@@ -18,16 +18,15 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        app:srcCompat="@mipmap/ic_main"
-         />
+        app:srcCompat="@mipmap/ic_main"/>
 
     <TextView
         android:id="@+id/text1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="290dp"
+        android:layout_height="140dp"
         android:layout_gravity="center_horizontal|center"
         android:layout_margin="10dp"
-        android:text="Willkommen bei DataLocos! \n\nHier bekommst du Informationen zum Datenschutz, du kannst deine Daten checken sowie dein Wissen überprüfen."
+        android:text="\n\nWillkommen bei DataLocos! \n\nHier bekommst du Informationen zum Datenschutz, du kannst deine Daten checken sowie dein Wissen überprüfen."
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
