@@ -26,7 +26,7 @@
         android:layout_height="140dp"
         android:layout_gravity="center_horizontal|center"
         android:layout_margin="10dp"
-        android:text="\n\nWillkommen bei DataLocos! \n\nHier bekommst du Informationen zum Datenschutz, du kannst deine Daten checken sowie dein Wissen überprüfen."
+        android:text="\n\nWillkommen bei DataLocus! \n\nHier bekommst du Informationen zum Datenschutz, du kannst deine Daten checken sowie dein Wissen überprüfen."
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
