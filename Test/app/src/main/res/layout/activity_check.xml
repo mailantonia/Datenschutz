@@ -64,8 +64,12 @@
         android:onClick="Mail_check"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:onClick="StartNewAktivitaeten"
         android:textColor="@android:color/background_light"
         android:text="E-Mail Sicherheitscheck" />
+=======
+        android:text="Google - meine Aktivitäten" />
+>>>>>>> 18f5100d60a31187642cb841b5ffbc5ddac92bed
 
     <Button
         android:id="@+id/button13"
@@ -77,12 +81,21 @@
         android:text="Passwort Sicherheitscheck" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/buttonWerbung"
         android:backgroundTint="@android:color/holo_orange_light"
-        android:onClick="Zurück"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:onClick="StartNewWerbung"
         android:textColor="@android:color/background_light"
-        android:text="Zurück in das Menü" />
+        android:text="Google Werbung" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="Zurück"
+        android:text="Zurück in das Menü"
+        android:textColor="@android:color/background_light" />
 
 </LinearLayout>
