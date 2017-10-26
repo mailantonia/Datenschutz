@@ -71,8 +71,9 @@
         android:backgroundTint="@android:color/holo_orange_light"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:onClick="Passwort_check"
         android:textColor="@android:color/background_light"
-        android:text="Weiterer Button" />
+        android:text="Passwort Sicherheitscheck" />
 
     <Button
         android:id="@+id/button11"

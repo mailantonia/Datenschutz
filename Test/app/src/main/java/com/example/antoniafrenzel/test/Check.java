@@ -25,4 +25,10 @@ public class Check extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void Passwort_check(View v) {
+
+        Intent intent = new Intent(this, Check_button_passwort.class);
+        startActivity(intent);
+    }
 }

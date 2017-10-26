@@ -8,7 +8,7 @@ public class Auswahl_Informationen {
         public String Infos[]= {
                 "„Sammelbegriff über die in verschiedenen Gesetze zum Schutz des Individuums angeordneten Rechtsnormen, die erreichen sollen, dass seine Privatsphäre in einer zunehmend automatisierten und computerisierten Welt vor unberechtigten Zugriffen von außen geschützt wird.“\n" + "Quelle: Wirtschaftslexikon Gabler\n" + "\n",
                 "Jeder der das Internet nutzt hinterlässt Spuren über seine Identität und sein Nutzerverhalten.",
-                "Daher sollte jeder Internetnutzer beachten:\n(1.) Selbstschutz: Achtsam mit persönlichen Daten umzugehen.\n(2.) Fremdschutz: Den Nutzer durch Gesetze zu schützen.",
+                "Daher sollte jeder Internetnutzer beachten:\n\n(1.) Selbstschutz: Achtsam mit persönlichen Daten umzugehen.\n\n(2.) Fremdschutz: Den Nutzer durch Gesetze zu schützen.",
                 "Internetnutzer gehen häufig unachtsam mit ihren persönlichen Daten im Internet um –  aufgrund von blindem Vertrauen in Anbieter und dem Gefühl von Anonymität im Internet.",
                 "Durch das „Internet of Things“ wird das Thema Datenschutz immer präsenter, da technische Geräte (beispielsweise Kühlschränke oder Alarmanlagen) über den Anschluss zum Internet persönliche Daten über das Nutzerverhalten weitergeben.",
                 "Studien zeigen, dass Deutsche im Vergleich zu anderen Nationalitäten ein eher ausgeprägtes Bewusstsein zum Datenschutz haben.",
