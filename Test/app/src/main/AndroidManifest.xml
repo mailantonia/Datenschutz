@@ -48,6 +48,7 @@
             android:label="Informationen" />
 
         <activity android:name=".Check_button_mail"></activity>
+        <activity android:name=".Check_button_standortverlauf"></activity>
 
     </application>
 
