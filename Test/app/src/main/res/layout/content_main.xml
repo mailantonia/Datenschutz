@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
@@ -19,49 +19,49 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         app:srcCompat="@mipmap/ic_main"
-       android:layout_margin="100dp"
          />
 
     <TextView
         android:id="@+id/text1"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="50dp"
-        android:text="Willkommen!"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-         />
+        android:layout_gravity="center_horizontal|center"
+        android:layout_margin="10dp"
+        android:text="Willkommen bei DataLocos! \n\nHier bekommst du Informationen zum Datenschutz, du kannst deine Daten checken sowie dein Wissen überprüfen."
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonInfo"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="140dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_gravity="center"
         android:backgroundTint="@android:color/holo_green_light"
         android:onClick="starttoInformation"
         android:text="Informationen"
         app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonCheck"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="140dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:backgroundTint="@android:color/holo_orange_light"
-        android:text="Check dich!"
+        android:text="Check"
         android:onClick="starttoCheck"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInfo"
         />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonQuiz"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="140dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:onClick="startNewActivity"
         android:text="zum Quiz"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCheck"
          />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -64,4 +64,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Check.class);
         startActivity(intent);
     }
+    public void startNewImpressum(View v) {
+
+        Intent intent = new Intent(this, Impressum.class);
+        startActivity(intent);
+    }
 }

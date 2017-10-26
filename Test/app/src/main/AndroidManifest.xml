@@ -39,13 +39,14 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Informationen"
-            android:label="Informationen"/>
+            android:label="Informationen" />
         <activity
-            android:name="Informationen_Standort"
-            android:label="Informationen"/>
+            android:name=".Informationen_Standort"
+            android:label="Informationen" />
         <activity
             android:name=".Informationen_Google"
-            android:label="Informationen"></activity>
+            android:label="Informationen" />
+        <activity android:name=".Impressum"></activity>
     </application>
 
 </manifest>
