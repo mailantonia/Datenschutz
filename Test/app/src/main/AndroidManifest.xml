@@ -46,11 +46,9 @@
         <activity
             android:name=".Informationen_Google"
             android:label="Informationen" />
-<<<<<<< HEAD
-        <activity android:name=".Impressum"></activity>
-=======
+
         <activity android:name=".Check_button_mail"></activity>
->>>>>>> 2c0811215f5878bd707962cd5aa264aa094ee16a
+
     </application>
 
 </manifest>
