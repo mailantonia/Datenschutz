@@ -88,11 +88,11 @@
 
     <Button
         android:id="@+id/button11"
-        android:backgroundTint="@android:color/holo_orange_light"
-        android:onClick="Zurück"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/background_light"
-        android:text="Zurück in das Menü" />
+        android:backgroundTint="@android:color/darker_gray"
+        android:onClick="Zurück"
+        android:text="Zurück in das Menü"
+        android:textColor="@android:color/background_light" />
 
 </LinearLayout>
