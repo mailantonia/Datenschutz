@@ -56,7 +56,17 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textColor="@android:color/background_light"
-        android:text="Weiterer Button" />
+        android:onClick="StartNewAktivitaeten"
+        android:text="Google meine Aktivitäten" />
+
+    <Button
+        android:id="@+id/buttonWerbung"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="StartNewWerbung"
+        android:textColor="@android:color/background_light"
+        android:text="Google Werbung" />
 
     <Button
         android:id="@+id/button10"
@@ -76,20 +86,12 @@
         android:textColor="@android:color/background_light"
         android:text="Passwort Sicherheitscheck" />
 
-    <Button
-        android:id="@+id/buttonWerbung"
-        android:backgroundTint="@android:color/holo_orange_light"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:onClick="StartNewWerbung"
-        android:textColor="@android:color/background_light"
-        android:text="Google Werbung" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/darker_gray"
+        android:backgroundTint="@color/colorPrimary"
         android:onClick="Zurück"
         android:text="Zurück in das Menü"
         android:textColor="@android:color/background_light" />
