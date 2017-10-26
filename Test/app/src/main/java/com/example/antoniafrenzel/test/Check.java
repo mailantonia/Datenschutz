@@ -37,4 +37,14 @@ public class Check extends AppCompatActivity {
         Intent intent = new Intent(this, Check_button_passwort.class);
         startActivity(intent);
     }
+    public void StartNewAktivitaeten(View v) {
+
+        Intent intent = new Intent(this, Check_button_Aktivitaeten.class);
+        startActivity(intent);
+    }
+    public void StartNewWerbung(View v) {
+
+        Intent intent = new Intent(this, Check_button_Werbung.class);
+        startActivity(intent);
+    }
 }

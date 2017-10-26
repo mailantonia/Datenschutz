@@ -49,6 +49,8 @@
 
         <activity android:name=".Check_button_mail"></activity>
         <activity android:name=".Check_button_standortverlauf"></activity>
+        <activity android:name=".Check_button_Aktivitaeten"></activity>
+        <activity android:name=".Check_button_Werbung"></activity>
 
     </application>
 

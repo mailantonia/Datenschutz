@@ -64,8 +64,9 @@
         android:backgroundTint="@android:color/holo_orange_light"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:onClick="StartNewAktivitaeten"
         android:textColor="@android:color/background_light"
-        android:text="Weiterer Button" />
+        android:text="Google - meine Aktivitäten" />
 
     <Button
         android:id="@+id/button13"
@@ -75,6 +76,15 @@
         android:onClick="Passwort_check"
         android:textColor="@android:color/background_light"
         android:text="Passwort Sicherheitscheck" />
+
+    <Button
+        android:id="@+id/buttonWerbung"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="StartNewWerbung"
+        android:textColor="@android:color/background_light"
+        android:text="Google Werbung" />
 
     <Button
         android:id="@+id/button11"
