@@ -15,8 +15,7 @@ public class Impressum extends AppCompatActivity {
 
     public void startNewActivity(View v) {
 
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-
     }
 }
