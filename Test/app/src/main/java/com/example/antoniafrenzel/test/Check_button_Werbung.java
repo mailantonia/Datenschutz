@@ -21,10 +21,10 @@ public class Check_button_Werbung extends AppCompatActivity{
         Kapitel.setText("Google Werbung");
 
         Teaser = (TextView) findViewById(R.id.textView6);
-        Teaser.setText("Auf deinem Smartphone ist standartmäßig die Standortlokalisierung eingeschaltet. Solltest du das nicht wollen, dann solltest du das jetzt unter deinen Einstellungen ändern.");
+        Teaser.setText("Hast du dich schon einmal gefragt, wie Google es schafft dir Werbung zu zeigen, die genau auf dich zugeschnitten ist?");
 
         Informationstext = (TextView) findViewById(R.id.textView5);
-        Informationstext.setText("Unter diesem Link kannst du sehen, welchen Standorte Google von dir gespeichert hat: \n");
+        Informationstext.setText("Google verdient sein Geld mit personalisierter Werbung. Wenn du Google nutzt, dannn analysiert die Seite im Hintergrund genau dein Nutzerverhalten. U.a. erstellt die Seite eine Liste von Dingen die dir gefallen. Auf Grundlage dieser Liste bekommst du dann passende Werbung. Google hat dafür einen Algorithmus, der aus deinem Suchverhalten eine Liste erstellt. Unter diesem Link kannst du dir die Liste anschauen. Du kannst die Liste auch ergänzen sowie Punkte davon löschen. \n");
 
         Link = (TextView) findViewById(R.id.textView7);
         Link.setText("https://adssettings.google.com/authenticated");
