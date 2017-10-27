@@ -9,27 +9,17 @@
     android:gravity="center">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:padding="15dp"
-        android:layout_marginBottom="0dp">
-
-       
-
         <ImageView
             android:id="@+id/imageView7"
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_gravity="left"
+            android:layout_gravity="center"
             app:srcCompat="@mipmap/ic_check" />
 
-    </RelativeLayout>
 
     <Button
         android:id="@+id/button9"
