@@ -1,16 +1,11 @@
 package com.example.antoniafrenzel.test;
 
 import android.content.Intent;
-import android.graphics.ImageFormat;
-import android.icu.text.IDNA;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 public class Informationen extends AppCompatActivity {
 
@@ -83,7 +78,7 @@ public class Informationen extends AppCompatActivity {
     //Button Informationen abbrechen
     public void starttoInformation(View v)
     {
-        Intent intent = new Intent(this, Seite3.class);
+        Intent intent = new Intent(this, Informationen_Menue.class);
         startActivity(intent);
     }
 

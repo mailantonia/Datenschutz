@@ -20,11 +20,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SecondActivity"
+            android:name=".Quiz_Start"
             android:label="Quiz"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Seite3"
+            android:name=".Informationen_Menue"
             android:label="Informationen"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -47,13 +47,20 @@
         <activity
             android:name=".Informationen_Google"
             android:label="Informationen" />
-
-        <activity android:name=".Check_button_mail"></activity>
-        <activity android:name=".Check_button_standortverlauf"></activity>
-        <activity android:name=".Check_button_passwort"></activity>
-        <activity android:name=".Check_button_Aktivitaeten"></activity>
-        <activity android:name=".Check_button_Werbung"></activity>
-
+        <activity
+            android:name=".Check_button_mail"
+            android:label="Dein Datenschutz Check"/>
+        <activity
+            android:name=".Check_button_standortverlauf"
+            android:label="Dein Datenschutz Check"/>
+        <activity
+            android:name=".Check_button_passwort"
+            android:label="Dein Datenschutz Check"/>
+        <activity
+            android:name=".Check_button_Aktivitaeten"
+            android:label="Dein Datenschutz Check"/>
+        <activity
+            android:name=".Check_button_Werbung"
+            android:label="Dein Datenschutz Check"/>
     </application>
-
 </manifest>

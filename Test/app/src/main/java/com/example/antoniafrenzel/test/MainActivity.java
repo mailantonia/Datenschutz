@@ -2,8 +2,6 @@ package com.example.antoniafrenzel.test;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -47,14 +45,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void startNewActivity(View v) {
 
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, Quiz_Start.class);
         startActivity(intent);
 
     }
 
     public void starttoInformation(View v) {
 
-        Intent intent = new Intent(this, Seite3.class);
+        Intent intent = new Intent(this, Informationen_Menue.class);
         startActivity(intent);
 
     }

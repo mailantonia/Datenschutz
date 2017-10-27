@@ -1,9 +1,7 @@
 package com.example.antoniafrenzel.test;
 
-import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;  //evtl falsch...
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +12,7 @@ import android.widget.Toast;
 
 public class Quiz extends AppCompatActivity {
 
-    private AuswahlFragen mAuswahlFragen = new AuswahlFragen();
+    private Auswahl_Fragen mAuswahlFragen = new Auswahl_Fragen();
 
     private TextView mScoreView;
     private TextView mAnzFrage;
@@ -181,7 +179,7 @@ public class Quiz extends AppCompatActivity {
         //startActivity(intent);
     }
     private  void goBackToMainActivity(){
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, Quiz_Start.class);
         startActivity(intent);
     }
 }

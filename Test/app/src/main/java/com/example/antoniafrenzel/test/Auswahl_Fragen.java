@@ -4,7 +4,7 @@ package com.example.antoniafrenzel.test;
  * Created by Antonia Frenzel on 08.10.2017.
  */
 
-public class AuswahlFragen {
+public class Auswahl_Fragen {
     public String mQuestions[]= {
             "Was ist das Recht auf informationelle Selbstbestimmung?",
             "Wie viel Prozent der Internet-Nutzer lesen die AGBs?",

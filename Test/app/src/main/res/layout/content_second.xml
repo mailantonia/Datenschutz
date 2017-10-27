@@ -5,7 +5,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.antoniafrenzel.test.SecondActivity"
+    tools:context="com.example.antoniafrenzel.test.Quiz_Start"
     tools:showIn="@layout/activity_second"
     android:layout_gravity="center">
 

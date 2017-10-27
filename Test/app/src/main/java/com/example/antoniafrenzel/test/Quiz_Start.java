@@ -8,39 +8,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class Seite3 extends AppCompatActivity {
+public class Quiz_Start extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seite3);
+        setContentView(R.layout.activity_second);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-}
-
+    }
     public void startNewActivity(View v) {
-
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-
-    public void Infos_Datenschutz(View v) {
-
-        Intent intent = new Intent(this, Informationen.class);
-        startActivity(intent);
-    }
-
-    public void Infos_Standortlokalisierung(View v) {
-
-        Intent intent = new Intent(this, Informationen_Standort.class);
-        startActivity(intent);
-    }
-
-    public void Infos_Google(View v) {
-
-        Intent intent = new Intent(this, Informationen_Google.class);
+    public void startQuiz(View v) {
+        Intent intent = new Intent(this, Quiz.class);
         startActivity(intent);
     }
 }
