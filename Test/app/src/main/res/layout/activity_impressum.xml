@@ -23,5 +23,6 @@ Sie wurde erstellt von Clara Lachmann und Antonia Frenzel"
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Zurück" />
+        android:text="Zurück"
+        android:onClick="startNewActivity"/>
 </LinearLayout>
