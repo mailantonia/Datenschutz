@@ -25,7 +25,7 @@ public class Check_button_standortverlauf extends AppCompatActivity {
         Teaser.setText("Auf deinem Smartphone ist standartmäßig die Standortlokalisierung eingeschaltet. Solltest du das nicht wollen, dann solltest du das jetzt unter deinen Einstellungen ändern.");
 
         Informationstext = (TextView) findViewById(R.id.textView5);
-        Informationstext.setText("Google speichert hier auch wie viele Orte du insgesamt besucht hast. Außerdem kannst du hier deine letzten Reisen, deine Wohnanschrift sowie den Standort deiner Arbeit finden.\n" +
+        Informationstext.setText("Google speichert hier wann du wo warst. Außerdem kannst du hier deine letzten Reisen, deine Wohnanschrift sowie den Standort deiner Arbeit finden.\n" +
                 "Sollte dir das zu viele Informationen über dich auf einem Schlag sein, hast du hier auch die Möglichkeit, den Standortverlauf zu pausieren oder ganz zu deaktivieren ;.)\n\n" +
                 "Unter diesem Link kannst du sehen, welchen Standorte Google von dir gespeichert hat: \n");
 

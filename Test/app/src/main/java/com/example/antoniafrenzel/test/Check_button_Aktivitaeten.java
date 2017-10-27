@@ -25,7 +25,7 @@ public class Check_button_Aktivitaeten extends AppCompatActivity{
         Kapitel.setText("Google Meine Aktivitäten");
 
         Teaser = (TextView) findViewById(R.id.textView6);
-        Teaser.setText("Wenn du etwas über die Google-Suche suchst, dann wird der Eintrag von Google gespeichert. Das funktioniert mit jedem Geräte, mit dem du über dein Google-Konto angemeldet bist. Auf der Seite 'Meine Aktivitäten' kannst du sehen. wass Google von dir gespeichert hat.");
+        Teaser.setText("Wenn du etwas über die Google-Suche suchst, dann wird der Eintrag von Google gespeichert. Das funktioniert mit jedem Geräte, mit dem du über dein Google-Konto angemeldet bist. Auf der Seite 'Meine Aktivitäten' kannst du sehen, was Google von dir gespeichert hat.");
 
         Informationstext = (TextView) findViewById(R.id.textView5);
         Informationstext.setText("Die Seite ist sehr umfangreich und bietet dir u.a. diese Wahlmöglichkeiten:\n\n" +
