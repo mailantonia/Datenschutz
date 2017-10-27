@@ -21,7 +21,7 @@
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:label="@string/title_activity_second"
+            android:label="Quiz"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Seite3"
@@ -32,11 +32,12 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.antoniafrenzel.test.MainActivity" />
         </activity>
-        <activity android:name=".Quiz" />
+        <activity
+            android:name=".Quiz"
+            android:label="Quiz"/>
         <activity
             android:name=".Check"
-            android:label="Check Dich"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="Dein Datenschutz Check" />
         <activity
             android:name=".Informationen"
             android:label="Informationen" />
