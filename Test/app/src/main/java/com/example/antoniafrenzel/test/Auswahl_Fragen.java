@@ -23,7 +23,11 @@ public class Auswahl_Fragen {
             "Was ist eine große Gefahr des “Internet of Things” (IoT)?",
             "Deutsche haben gegenüber anderen Nationalitäten ein eher ausgeprägtes Bewusstsein zum Datenschutz.",
             "Durch das Sammeln von Daten gibt es keine Umsatzsteigerung des Einzelhandels durch Push-Up Nachrichten und Rabattcoupons.",
-            "Wie viel Prozent der Deutschen ab 16 Jahren nutzen die Google-Dienste täglich?"
+            "Wie viel Prozent der Deutschen ab 16 Jahren nutzen die Google-Dienste täglich?",
+            "Welche Aufsicht für den öffentlichen Sektor gibt es für die Datenschutzkontrolle auf Bundesebene?",
+            "Welcher Leitsatz für das Internet gilt?",
+            "Eine Suchmaschine hat die Möglichkeiten alle Informationen seiner Nutzer zu sammeln und jeden eine eindeutige Nummer zugeben.",
+            "Wie nenntn man es, wenn vertrauliche Informationen wie Passwörter oder Kreditkartendaten abgefangt werden?"
     };
     private String mAuswahl[][]={
             //Frage 1
@@ -71,9 +75,17 @@ public class Auswahl_Fragen {
             //17
             {"Wahr","Falsch","unwichtig"},
             //18
-            {"23 Prozent","66 Prozent","71 Prozent"}
+            {"23 Prozent","66 Prozent","71 Prozent"},
+            //19
+            {"Ministerium für Datenschutz","Bundesbeauftragter für den Datenschutz","nichts"},
+            //20
+            {"Das Internet vergisst nicht.","Das Internet hat umfangreiche Gesetze zum Datenschutz","Das Internet vergisst nach 10 Jahren."},
+            //21
+            {"Wahr","Falsch","unwichtig"},
+            //22
+            {"Zählpixel","Pharming","Phishing"}
 
-    }; //{"","",""}
+    }; ///{"","",""}
     private String mAntwort[]={
             "Jede Person hat das Recht auf Achtung ihres Privats- und Familienlebens, ihrer Wohnung und ihrer Korrespondenz.",
             "4,5 Prozent",
@@ -81,7 +93,8 @@ public class Auswahl_Fragen {
             "Dienste, die die geografische Position einer Person genau bestimmen könne.",
             "Tourismusbranche", "Falsch", "Wahr","Bis zu 10 cm", "Wahr", "Wahr", "Falsch", "Wahr","Wahr",
             "Blindes Vertrauen in Anbieter und Gefühl der Anonymität.","Alle IoT-Gegenstände können persönliche Daten über das Nutzerverhalten weitergeben.",
-            "Wahr","Falsch", "66 Prozent"};
+            "Wahr","Falsch", "66 Prozent", "Bundesbeauftragter für den Datenschutz","Das Internet vergisst nicht.", "Wahr",
+            "Phishing"};
 
     public String getFrage(int a){
         String Frage=mQuestions[a];
