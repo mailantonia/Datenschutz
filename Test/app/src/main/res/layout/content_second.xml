@@ -34,7 +34,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimary"
-        android:onClick="startNewActivity"
+        android:onClick="BackToMain"
         android:text="zurück"
         app:layout_constraintTop_toBottomOf="@+id/button_QuizStarten"
      />

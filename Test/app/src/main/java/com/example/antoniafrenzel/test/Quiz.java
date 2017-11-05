@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Arrays;
+
 public class Quiz extends AppCompatActivity {
 
     private Auswahl_Fragen mAuswahlFragen = new Auswahl_Fragen();
@@ -27,10 +29,11 @@ public class Quiz extends AppCompatActivity {
     private int AnzFragen = 0;
     private String u="unwichtig";
     private int Zufallszahl = 0;
-  //private  boolean Hilfsfeld[mAuswahlFragen.mQuestions.length]={false};
+    private  boolean[] Hilfsfeld = new boolean[mAuswahlFragen.mQuestions.length];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Arrays.fill(Hilfsfeld, false);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
@@ -96,13 +99,13 @@ public class Quiz extends AppCompatActivity {
         //Ende Button3
     }
     private int createZufall(){
-       // while (1){
+        while (true){
             Zufallszahl= (int) (Math.random()*(mAuswahlFragen.mQuestions.length - 0));//Maximale Zahl minus minimale Zahl
-           // if (Hilfsfeld[Zufallszahl]==false){
-               // break;
-          //  }
-       // }
-        //Hilfsfeld[Zufallszahl]=true;
+            if (Hilfsfeld[Zufallszahl]==false){
+                break;
+           }
+        }
+        Hilfsfeld[Zufallszahl]=true;
         return Zufallszahl;
     }
     private void updateQuestions(){

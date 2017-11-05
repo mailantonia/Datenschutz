@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,12 +19,27 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
+        final android.view.MenuItem aboutTheAppItem = menu.getItem(0);
+
+        aboutTheAppItem.setOnMenuItemClickListener(new android.view.MenuItem.OnMenuItemClickListener() {
+
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                MainActivity.this.startNewImpressum(null);
+                return true;
+            }
+        });
+
+
+
         return true;
     }
 
@@ -66,5 +82,12 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, Impressum.class);
         startActivity(intent);
+
+
+
+
     }
+
+
+
 }

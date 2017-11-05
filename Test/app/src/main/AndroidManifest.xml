@@ -62,5 +62,8 @@
         <activity
             android:name=".Check_button_Werbung"
             android:label="Dein Datenschutz Check"/>
+        <activity
+            android:name=".Impressum"
+            android:label="Impressum"/>
     </application>
 </manifest>

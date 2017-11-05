@@ -16,7 +16,7 @@
         android:layout_width="304dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        android:onClick="startNewActivity"
+        android:onClick="BackToMain"
         android:text="Zurück"
          />
 
