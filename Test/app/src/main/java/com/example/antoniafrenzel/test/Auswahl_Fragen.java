@@ -27,7 +27,9 @@ public class Auswahl_Fragen {
             "Welche Aufsicht für den öffentlichen Sektor gibt es für die Datenschutzkontrolle auf Bundesebene?",
             "Welcher Leitsatz für das Internet gilt?",
             "Eine Suchmaschine hat die Möglichkeiten alle Informationen seiner Nutzer zu sammeln und jeden eine eindeutige Nummer zugeben.",
-            "Wie nenntn man es, wenn vertrauliche Informationen wie Passwörter oder Kreditkartendaten abgefangt werden?"
+            "Wie nennt man es, wenn vertrauliche Informationen wie Passwörter oder Kreditkartendaten abgefangt werden?",
+            "Google ruft in regelmäßigen Abständen den Standort ab - auch wenn der Nutzer den Dienst in dem Moment nicht aktiv nutzen.",
+            "Google ist für die Nutzer kostenlos. Doch wie verdienst Google sein Geld?"
     };
     private String mAuswahl[][]={
             //Frage 1
@@ -83,7 +85,11 @@ public class Auswahl_Fragen {
             //21
             {"Wahr","Falsch","unwichtig"},
             //22
-            {"Zählpixel","Pharming","Phishing"}
+            {"Zählpixel","Pharming","Phishing"},
+            //23
+            {"Wahr","Falsch","unwichtig"},
+            //24
+            {"Der Nutzer bezahlt mit seinen persönlichen Daten","Google finanziert sich ausschließlich über Spenden","Google wird von EU-Geldern finanziert."}
 
     }; ///{"","",""}
     private String mAntwort[]={
@@ -94,7 +100,7 @@ public class Auswahl_Fragen {
             "Tourismusbranche", "Falsch", "Wahr","Bis zu 10 cm", "Wahr", "Wahr", "Falsch", "Wahr","Wahr",
             "Blindes Vertrauen in Anbieter und Gefühl der Anonymität.","Alle IoT-Gegenstände können persönliche Daten über das Nutzerverhalten weitergeben.",
             "Wahr","Falsch", "66 Prozent", "Bundesbeauftragter für den Datenschutz","Das Internet vergisst nicht.", "Wahr",
-            "Phishing"};
+            "Phishing", "Wahr", "Der Nutzer bezahlt mit seinen persönlichen Daten"};
 
     public String getFrage(int a){
         String Frage=mQuestions[a];
