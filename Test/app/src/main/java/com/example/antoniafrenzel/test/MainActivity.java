@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void startNewActivity(View v) {
+    public void StarttoQuiz(View v) {
 
         Intent intent = new Intent(this, Quiz_Start.class);
         startActivity(intent);

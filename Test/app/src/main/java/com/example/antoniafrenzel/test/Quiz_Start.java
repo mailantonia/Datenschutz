@@ -18,7 +18,7 @@ public class Quiz_Start extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
     }
-    public void startNewActivity(View v) {
+    public void BackToMain(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

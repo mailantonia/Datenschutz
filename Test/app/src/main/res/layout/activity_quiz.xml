@@ -44,10 +44,11 @@
     <TextView
         android:id="@+id/question"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="160dp"
         android:text="Was ist das Recht auf informationelle Selbstbestimmung?"
         android:padding="8dp"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="5dp"
+        />
     <Button
         android:id="@+id/buttonA"
         android:layout_width="match_parent"

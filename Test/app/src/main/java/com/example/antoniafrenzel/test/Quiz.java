@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;  //evtl falsch...
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,15 +17,15 @@ public class Quiz extends AppCompatActivity {
 
     private Auswahl_Fragen mAuswahlFragen = new Auswahl_Fragen();
 
-    private TextView mScoreView;
+    private TextView mPunkteAnsicht;
     private TextView mAnzFrage;
-    private TextView mQuestionView;
-    private Button mButtonChoice1;
-    private Button mButtonChoice2;
-    private Button mButtonChoice3;
+    private TextView mFragenAnsicht;
+    private Button mButtonAuswahl1;
+    private Button mButtonAuswahl2;
+    private Button mButtonAuswahl3;
     private Button mButtonBack;
-    private String mAnswer;
-    private int mScore = 0;
+    private String mAntwort;
+    private int mPunkte = 0;
     private int mQuestionNumber = 0;
     private int AnzFragen = 0;
     private String u="unwichtig";
@@ -37,61 +38,61 @@ public class Quiz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        mScoreView =(TextView)findViewById(R.id.score);
+        mPunkteAnsicht =(TextView)findViewById(R.id.score);
         mAnzFrage = (TextView)findViewById(R.id.AnzFrage);
-        mQuestionView = (TextView)findViewById(R.id.question);
-        mButtonChoice1 = (Button)findViewById(R.id.buttonA);
-        mButtonChoice2 = (Button)findViewById(R.id.buttonB);
-        mButtonChoice3 = (Button)findViewById(R.id.buttonC);
+        mFragenAnsicht = (TextView)findViewById(R.id.question);
+        mButtonAuswahl1 = (Button)findViewById(R.id.buttonA);
+        mButtonAuswahl2 = (Button)findViewById(R.id.buttonB);
+        mButtonAuswahl3 = (Button)findViewById(R.id.buttonC);
         mButtonBack = (Button)findViewById(R.id.buttonD);
         updateQuestions();
 
         //Start des Lesens von Button1
-        mButtonChoice1.setOnClickListener(new View.OnClickListener(){
+        mButtonAuswahl1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                if (mButtonChoice1.getText()== mAnswer){
-                    mScore=mScore+1;
-                    updateScore(mScore);
+                if (mButtonAuswahl1.getText()== mAntwort){
+                    mPunkte = mPunkte +1;
+                    updateScore(mPunkte);
                     updateQuestions();
                     //Optional Falsch/Richtig anzeigen
                     Toast.makeText(Quiz.this, "Richtig", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAnswer, Toast.LENGTH_LONG).show();
+                    Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAntwort, Toast.LENGTH_LONG).show();
                     updateQuestions();
                 }
             }
         });
         // Ende des lesens von Button1
         //Start Button2
-        mButtonChoice2.setOnClickListener(new View.OnClickListener(){
+        mButtonAuswahl2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                if (mButtonChoice2.getText()== mAnswer){
-                    mScore=mScore+1;
-                    updateScore(mScore);
+                if (mButtonAuswahl2.getText()== mAntwort){
+                    mPunkte = mPunkte +1;
+                    updateScore(mPunkte);
                     updateQuestions();
                     //Optional Falsch/Richtig anzeigen
                     Toast.makeText(Quiz.this, "Richtig", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAnswer, Toast.LENGTH_LONG).show();
+                    Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAntwort, Toast.LENGTH_LONG).show();
                     updateQuestions();
                 }
             }
         });
         //Ende Button2
         //Start Button3
-        mButtonChoice3.setOnClickListener(new View.OnClickListener(){
+        mButtonAuswahl3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                if (mButtonChoice3.getText()== mAnswer){
-                    mScore=mScore+1;
-                    updateScore(mScore);
+                if (mButtonAuswahl3.getText()== mAntwort){
+                    mPunkte = mPunkte +1;
+                    updateScore(mPunkte);
                     updateQuestions();
                     //Falsch/Richtig wird angezeigt
                     Toast.makeText(Quiz.this, "Richtig", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAnswer, Toast.LENGTH_LONG).show();
+                    Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAntwort, Toast.LENGTH_LONG).show();
                     updateQuestions();
                 }
             }
@@ -113,25 +114,34 @@ public class Quiz extends AppCompatActivity {
         if (AnzFragen==10)
         {
             mAnzFrage.setVisibility(View.INVISIBLE);
-            mButtonChoice1.setVisibility(View.INVISIBLE);
-            mButtonChoice2.setVisibility(View.INVISIBLE);
-            mButtonChoice3.setVisibility(View.INVISIBLE);
+            mButtonAuswahl1.setVisibility(View.INVISIBLE);
+            mButtonAuswahl2.setVisibility(View.INVISIBLE);
+            mButtonAuswahl3.setVisibility(View.INVISIBLE);
             mButtonBack.setText("Zurück");
-            if (mScore ==10) {
-                mQuestionView.setText("Quiz beendet! \n\n" +
-                        "Du hast " + mScore + " von 10 Punkten.\n" +
-                        "Du bist ein echter Datenschutzheld. Halte die Augen weiter so offen!");
+            if (mPunkte ==10) {
+                mFragenAnsicht.setText(Html.fromHtml("Das Quiz ist beendet." + "<br>"+
+                        "Du hast " + "<font color=#FF0080>"+mPunkte+"</font>" + " von "+"<font color=#FF0080>"+"10 "+"</font>"+ "Punkten." +"<br>"+
+                        "Du bist ein echter Datenschutzheld. Ein großes Lob an dich! Halte die Augen weiter so offen!"));
             }
-            else if (mScore <10 && (mScore >5)) {
-                mQuestionView.setText("Quiz beendet! \n\n" +
-                        "Du hast " + mScore + " von 10 Punkten.\n" +
-                        "Du bist ein Datenschutzzwerg! Du bist schon auf einem guten Weg, doch halte stets deine Augen offen, damit deine Daten sicher bleiben!");
+            else if (mPunkte <10 && (mPunkte >5)) {
+                mFragenAnsicht.setText(Html.fromHtml("Das Quiz ist beendet." + "<br>"+
+                        "Du hast " + "<font color=#FF0080>"+mPunkte+"</font>" + " von "+"<font color=#FF0080>"+"10 "+"</font>"+ "Punkten." +"<br>"+
+                        "Du bist ein durchschnittlicher Datenschutzkenner! Du bist schon auf einem guten Weg, doch halte stets deine Augen offen, damit deine Daten sicher bleiben!"));
+                mButtonAuswahl3.setVisibility(View.VISIBLE);
+                mButtonAuswahl3.setText("zum Check");
             }
             else
             {
-                mQuestionView.setText("Quiz beendet! \n\n" +
-                        "Du hast " + mScore + " von 10 Punkten.\n" +
-                        "Du bist ein Datenschutzmuffel. Halte deine Daten gut im Blick, bevor sie weg sind!");
+                mFragenAnsicht.setText(Html.fromHtml("Das Quiz ist beenden." +"<br>"+
+                        "Du hast " + "<font color=#FF0080>"+mPunkte+"</font>" + " von "+"<font color=#FF0080>"+"10 "+"</font>"+ "Punkten." +"<br>"+
+                        "Du bist ein Datenschutzmuffel. Halte deine Daten gut im Blick, bevor sie weg sind!" +"<br>"+
+                        " Unter Check findest du Tipps, wie du dich schützen kannst."));
+                mButtonAuswahl2.setVisibility(View.VISIBLE);
+                mButtonAuswahl2.setText("zu den Informationen");
+                mButtonAuswahl3.setVisibility(View.VISIBLE);
+                //mButtonAuswahl3.setBackgroundColor(android.R.color.holo_green_light);
+                mButtonAuswahl3.setText("zum Check");
+              //  mButtonAuswahl3.setOnClickListener(goToCheck());
             }
         }
         else {
@@ -139,27 +149,28 @@ public class Quiz extends AppCompatActivity {
             mAnzFrage.setText(AnzFragen+1 + ". Frage in insgesamt 10");
             mQuestionNumber= createZufall();
 
-            mQuestionView.setText(mAuswahlFragen.getFrage(mQuestionNumber));
-            mButtonChoice1.setText(mAuswahlFragen.getAuswahl1(mQuestionNumber));
-            mButtonChoice2.setText(mAuswahlFragen.getAuswahl2(mQuestionNumber));
+            mFragenAnsicht.setText(mAuswahlFragen.getFrage(mQuestionNumber));
+            mButtonAuswahl1.setText(mAuswahlFragen.getAuswahl1(mQuestionNumber));
+            mButtonAuswahl2.setText(mAuswahlFragen.getAuswahl2(mQuestionNumber));
             if (mAuswahlFragen.getAuswahl3(mQuestionNumber)==u)
             {
-                mButtonChoice3.setVisibility(View.INVISIBLE);
+                mButtonAuswahl3.setVisibility(View.INVISIBLE);
             }
             else
             {
-                mButtonChoice3.setVisibility(View.VISIBLE);
-                mButtonChoice3.setText(mAuswahlFragen.getAuswahl3(mQuestionNumber));
+                mButtonAuswahl3.setVisibility(View.VISIBLE);
+                mButtonAuswahl3.setText(mAuswahlFragen.getAuswahl3(mQuestionNumber));
             }
-            mAnswer = mAuswahlFragen.getCorrectAnswer(mQuestionNumber);
+            mAntwort = mAuswahlFragen.getCorrectAnswer(mQuestionNumber);
             AnzFragen++;
             //mQuestionNumber++;
         }
     }
     private void updateScore (int point){
-        mScoreView.setText(""+mScore);
+        mPunkteAnsicht.setText(""+ mPunkte);
     }
 
+    //Dialog Quiz wirklich beenden
     public void startNewActivity(View v) {
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle("Quiz abbrechen");
@@ -178,11 +189,15 @@ public class Quiz extends AppCompatActivity {
                     }
                 });
         alertDialog.show();
-        //Intent intent = new Intent(this, MainActivity.class);
-        //startActivity(intent);
     }
+    //Funktion zum Zurück ins Main-Menü
     private  void goBackToMainActivity(){
         Intent intent = new Intent(this, Quiz_Start.class);
+        startActivity(intent);
+    }
+
+    private  void goToCheck(){
+        Intent intent = new Intent(this, Check.class);
         startActivity(intent);
     }
 }
