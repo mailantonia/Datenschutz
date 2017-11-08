@@ -126,7 +126,8 @@ public class Quiz extends AppCompatActivity {
             else if (mPunkte <10 && (mPunkte >5)) {
                 mFragenAnsicht.setText(Html.fromHtml("Das Quiz ist beendet." + "<br>"+
                         "Du hast " + "<font color=#FF0080>"+mPunkte+"</font>" + " von "+"<font color=#FF0080>"+"10 "+"</font>"+ "Punkten." +"<br>"+
-                        "Du bist ein durchschnittlicher Datenschutzkenner! Du bist schon auf einem guten Weg, doch halte stets deine Augen offen, damit deine Daten sicher bleiben!"));
+                        "Du bist ein durchschnittlicher Datenschutzkenner! Du bist schon auf einem guten Weg, doch halte stets deine Augen offen, damit deine Daten sicher bleiben!"+"<br>"+
+                "Unter Check findest du Tipps, wie du dich schützen kannst."));
                 mButtonAuswahl3.setVisibility(View.VISIBLE);
                 mButtonAuswahl3.setText("zum Check");
             }
@@ -135,7 +136,7 @@ public class Quiz extends AppCompatActivity {
                 mFragenAnsicht.setText(Html.fromHtml("Das Quiz ist beenden." +"<br>"+
                         "Du hast " + "<font color=#FF0080>"+mPunkte+"</font>" + " von "+"<font color=#FF0080>"+"10 "+"</font>"+ "Punkten." +"<br>"+
                         "Du bist ein Datenschutzmuffel. Halte deine Daten gut im Blick, bevor sie weg sind!" +"<br>"+
-                        " Unter Check findest du Tipps, wie du dich schützen kannst."));
+                        "Lese dir unsere Informationen durch. Unter Check findest du Tipps, wie du dich schützen kannst."));
                 mButtonAuswahl2.setVisibility(View.VISIBLE);
                 mButtonAuswahl2.setText("zu den Informationen");
                 mButtonAuswahl3.setVisibility(View.VISIBLE);
