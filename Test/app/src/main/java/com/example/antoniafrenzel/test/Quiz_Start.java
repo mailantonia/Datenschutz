@@ -16,12 +16,13 @@ public class Quiz_Start extends AppCompatActivity {
         setContentView(R.layout.activity_second);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
     }
+
     public void startNewActivity(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
     public void startQuiz(View v) {
         Intent intent = new Intent(this, Quiz.class);
         startActivity(intent);
