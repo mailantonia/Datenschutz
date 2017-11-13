@@ -31,6 +31,7 @@ public class Auswahl_Fragen {
             "Google ruft in regelmäßigen Abständen den Standort ab - auch wenn der Nutzer den Dienst in dem Moment nicht aktiv nutzen.",
             "Google ist für die Nutzer kostenlos. Doch wie verdienst Google sein Geld?"
     };
+    //Antwortmöglichkeiten
     private String mAuswahl[][]={
             //Frage 1
             {"Jede Person hat das Recht auf Achtung ihres Privats- und Familienlebens, ihrer Wohnung und ihrer Korrespondenz.",
@@ -92,6 +93,7 @@ public class Auswahl_Fragen {
             {"Der Nutzer bezahlt mit seinen persönlichen Daten","Google finanziert sich ausschließlich über Spenden","Google wird von EU-Geldern finanziert."}
 
     }; ///{"","",""}
+    //die richtige Antwort
     private String mAntwort[]={
             "Jede Person hat das Recht auf Achtung ihres Privats- und Familienlebens, ihrer Wohnung und ihrer Korrespondenz.",
             "4,5 Prozent",
@@ -102,22 +104,27 @@ public class Auswahl_Fragen {
             "Wahr","Falsch", "66 Prozent", "Bundesbeauftragter für den Datenschutz","Das Internet vergisst nicht.", "Wahr",
             "Phishing", "Wahr", "Der Nutzer bezahlt mit seinen persönlichen Daten"};
 
+    //Get-Funktion für Frage
     public String getFrage(int a){
         String Frage=mQuestions[a];
                 return Frage;
     }
+    //Get-Funktion für Antwortmöglichkeit 1
     public String getAuswahl1(int a){
         String Auswahl0=mAuswahl[a][0];
         return Auswahl0;
     }
+    //Get-Funktion für Antwortmöglichkeit 2
     public String getAuswahl2(int a) {
         String Auswahl1 = mAuswahl[a][1];
         return Auswahl1;
     }
+    //Get-Funktion für Antwortmöglichkeit 3
     public String getAuswahl3(int a) {
         String Auswahl2 = mAuswahl[a][2];
         return Auswahl2;
     }
+    //Get-Funktion der korrekten Antwort
     public String getCorrectAnswer(int a){
         String answer = mAntwort[a];
         return answer;

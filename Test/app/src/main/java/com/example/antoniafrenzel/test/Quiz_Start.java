@@ -17,12 +17,12 @@ public class Quiz_Start extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
-
+    //Funktion zum Quiz starten
     public void startNewActivity(View v) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-
+    //Funktion zum Zurück gehen
     public void startQuiz(View v) {
         Intent intent = new Intent(this, Quiz.class);
         startActivity(intent);

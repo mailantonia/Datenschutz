@@ -17,9 +17,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
     }
 
     @Override
@@ -28,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
 
         final android.view.MenuItem aboutTheAppItem = menu.getItem(0);
-
+        //Wenn das Main-Menü geklickt wird
         aboutTheAppItem.setOnMenuItemClickListener(new android.view.MenuItem.OnMenuItemClickListener() {
 
             @Override
@@ -55,36 +52,28 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+    //Funktion zum Starten des Quiz
     public void StarttoQuiz(View v) {
 
         Intent intent = new Intent(this, Quiz_Start.class);
         startActivity(intent);
-
     }
-
+    //Funktion zum Starten der Informationen
     public void starttoInformation(View v) {
 
         Intent intent = new Intent(this, Informationen_Menue.class);
         startActivity(intent);
-
     }
-
+    //Funktion zum des Check
     public void starttoCheck(View v) {
 
         Intent intent = new Intent(this, Check.class);
         startActivity(intent);
     }
+    //Funktion zum Start des Impressums
     public void startNewImpressum(View v) {
 
         Intent intent = new Intent(this, Impressum.class);
         startActivity(intent);
-
-
-
-
     }
-
-
-
 }
