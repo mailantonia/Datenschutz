@@ -67,16 +67,21 @@ public class Quiz extends AppCompatActivity {
         //Start Button2
         mButtonAuswahl2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                if (mButtonAuswahl2.getText()== mAntwort){
-                    mPunkte = mPunkte +1;
-                    updateScore(mPunkte);
-                    updateQuestions();
-                    //Optional Falsch/Richtig anzeigen
-                    Toast.makeText(Quiz.this, "Richtig", Toast.LENGTH_SHORT).show();
+                if (AnzFragen==11)
+                {
+                    goToInformation();
                 }
                 else {
-                    Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAntwort, Toast.LENGTH_LONG).show();
-                    updateQuestions();
+                    if (mButtonAuswahl2.getText() == mAntwort) {
+                        mPunkte = mPunkte + 1;
+                        updateScore(mPunkte);
+                        updateQuestions();
+                        //Optional Falsch/Richtig anzeigen
+                        Toast.makeText(Quiz.this, "Richtig", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAntwort, Toast.LENGTH_LONG).show();
+                        updateQuestions();
+                    }
                 }
             }
         });
@@ -84,16 +89,20 @@ public class Quiz extends AppCompatActivity {
         //Start Button3
         mButtonAuswahl3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                if (mButtonAuswahl3.getText()== mAntwort){
-                    mPunkte = mPunkte +1;
-                    updateScore(mPunkte);
-                    updateQuestions();
-                    //Falsch/Richtig wird angezeigt
-                    Toast.makeText(Quiz.this, "Richtig", Toast.LENGTH_SHORT).show();
+                if (AnzFragen==11){
+                       goToCheck();
                 }
                 else {
-                    Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAntwort, Toast.LENGTH_LONG).show();
-                    updateQuestions();
+                    if (mButtonAuswahl3.getText() == mAntwort) {
+                        mPunkte = mPunkte + 1;
+                        updateScore(mPunkte);
+                        updateQuestions();
+                        //Falsch/Richtig wird angezeigt
+                        Toast.makeText(Quiz.this, "Richtig", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(Quiz.this, "Falsch! Richtige Antwort: " + mAntwort, Toast.LENGTH_LONG).show();
+                        updateQuestions();
+                    }
                 }
             }
         });
@@ -118,6 +127,7 @@ public class Quiz extends AppCompatActivity {
             mButtonAuswahl2.setVisibility(View.INVISIBLE);
             mButtonAuswahl3.setVisibility(View.INVISIBLE);
             mButtonBack.setText("Zurück");
+            AnzFragen++;
             if (mPunkte ==10) {
                 mFragenAnsicht.setText(Html.fromHtml("Das Quiz ist beendet." + "<br>"+
                         "Du hast " + "<font color=#FF0080>"+mPunkte+"</font>" + " von "+"<font color=#FF0080>"+"10 "+"</font>"+ "Punkten." +"<br>"+
@@ -130,6 +140,7 @@ public class Quiz extends AppCompatActivity {
                 "Unter Check findest du Tipps, wie du dich schützen kannst."));
                 mButtonAuswahl3.setVisibility(View.VISIBLE);
                 mButtonAuswahl3.setText("zum Check");
+                mButtonAuswahl3.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
             }
             else
             {
@@ -139,14 +150,9 @@ public class Quiz extends AppCompatActivity {
                         "Lese dir unsere Informationen durch. Unter Check findest du Tipps, wie du dich schützen kannst."));
                 mButtonAuswahl2.setVisibility(View.VISIBLE);
                 mButtonAuswahl2.setText("zu den Informationen");
-                //mButtonAuswahl2.setOnClickListener((new android.view.View.OnClickListener())->{
-                  //  Quiz.this.goToInformation(null);
-                  //  return true;
-                        //});
                 mButtonAuswahl3.setVisibility(View.VISIBLE);
-                //mButtonAuswahl3.setBackgroundColor(android.R.color.holo_green_light);
+                mButtonAuswahl2.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
                 mButtonAuswahl3.setText("zum Check");
-              //  mButtonAuswahl3.setOnClickListener(goToCheck());
             }
         }
         else {
@@ -206,7 +212,7 @@ public class Quiz extends AppCompatActivity {
     }
 
     private  void goToInformation(){
-        Intent intent = new Intent(this, Informationen.class);
+        Intent intent = new Intent(this, Informationen_Menue.class);
         startActivity(intent);
     }
 }
