@@ -139,6 +139,10 @@ public class Quiz extends AppCompatActivity {
                         "Lese dir unsere Informationen durch. Unter Check findest du Tipps, wie du dich schützen kannst."));
                 mButtonAuswahl2.setVisibility(View.VISIBLE);
                 mButtonAuswahl2.setText("zu den Informationen");
+                //mButtonAuswahl2.setOnClickListener((new android.view.View.OnClickListener())->{
+                  //  Quiz.this.goToInformation(null);
+                  //  return true;
+                        //});
                 mButtonAuswahl3.setVisibility(View.VISIBLE);
                 //mButtonAuswahl3.setBackgroundColor(android.R.color.holo_green_light);
                 mButtonAuswahl3.setText("zum Check");
@@ -198,6 +202,11 @@ public class Quiz extends AppCompatActivity {
     //Funktion für Link zum Check
     private  void goToCheck(){
         Intent intent = new Intent(this, Check.class);
+        startActivity(intent);
+    }
+
+    private  void goToInformation(){
+        Intent intent = new Intent(this, Informationen.class);
         startActivity(intent);
     }
 }
