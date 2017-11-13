@@ -153,6 +153,7 @@ public class Quiz extends AppCompatActivity {
                 mButtonAuswahl3.setVisibility(View.VISIBLE);
                 mButtonAuswahl2.setBackgroundColor(getResources().getColor(android.R.color.holo_green_light));
                 mButtonAuswahl3.setText("zum Check");
+                mButtonAuswahl3.setBackgroundColor(getResources().getColor(android.R.color.holo_orange_light));
             }
         }
         else {
