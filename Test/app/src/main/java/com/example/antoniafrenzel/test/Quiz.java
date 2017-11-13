@@ -26,15 +26,15 @@ public class Quiz extends AppCompatActivity {
     private Button mButtonBack;
     private String mAntwort;
     private int mPunkte = 0;
-    private int mQuestionNumber = 0;
+    private int mFragennummer = 0;
     private int AnzFragen = 0;
-    private String u="unwichtig";
+    private String u=" ";
     private int Zufallszahl = 0;
-    private  boolean[] Hilfsfeld = new boolean[mAuswahlFragen.mQuestions.length];
+    private  boolean[] Hilfsfeld_Zufallszahlen = new boolean[mAuswahlFragen.mQuestions.length];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Arrays.fill(Hilfsfeld, false);
+        Arrays.fill(Hilfsfeld_Zufallszahlen, false);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
@@ -102,11 +102,11 @@ public class Quiz extends AppCompatActivity {
     private int createZufall(){
         while (true){
             Zufallszahl= (int) (Math.random()*(mAuswahlFragen.mQuestions.length - 0));//Maximale Zahl minus minimale Zahl
-            if (Hilfsfeld[Zufallszahl]==false){
+            if (Hilfsfeld_Zufallszahlen[Zufallszahl]==false){
                 break;
            }
         }
-        Hilfsfeld[Zufallszahl]=true;
+        Hilfsfeld_Zufallszahlen[Zufallszahl]=true;
         return Zufallszahl;
     }
     private void updateQuestions(){
@@ -148,30 +148,29 @@ public class Quiz extends AppCompatActivity {
         else {
 
             mAnzFrage.setText(AnzFragen+1 + ". Frage in insgesamt 10");
-            mQuestionNumber= createZufall();
+            mFragennummer= createZufall();
 
-            mFragenAnsicht.setText(mAuswahlFragen.getFrage(mQuestionNumber));
-            mButtonAuswahl1.setText(mAuswahlFragen.getAuswahl1(mQuestionNumber));
-            mButtonAuswahl2.setText(mAuswahlFragen.getAuswahl2(mQuestionNumber));
-            if (mAuswahlFragen.getAuswahl3(mQuestionNumber)==u)
+            mFragenAnsicht.setText(mAuswahlFragen.getFrage(mFragennummer));
+            mButtonAuswahl1.setText(mAuswahlFragen.getAuswahl1(mFragennummer));
+            mButtonAuswahl2.setText(mAuswahlFragen.getAuswahl2(mFragennummer));
+            if (mAuswahlFragen.getAuswahl3(mFragennummer)==u)   //Bei Wahr/Flasch-Fragen wird Button nicht gebraucht. Wenn u Leer ist, wird Button 3 unsichtbar gemacht
             {
                 mButtonAuswahl3.setVisibility(View.INVISIBLE);
             }
             else
             {
-                mButtonAuswahl3.setVisibility(View.VISIBLE);
-                mButtonAuswahl3.setText(mAuswahlFragen.getAuswahl3(mQuestionNumber));
+                mButtonAuswahl3.setVisibility(View.VISIBLE);   //Button wird wieder sichtbar gemacht
+                mButtonAuswahl3.setText(mAuswahlFragen.getAuswahl3(mFragennummer));
             }
-            mAntwort = mAuswahlFragen.getCorrectAnswer(mQuestionNumber);
+            mAntwort = mAuswahlFragen.getCorrectAnswer(mFragennummer);
             AnzFragen++;
-            //mQuestionNumber++;
         }
     }
     private void updateScore (int point){
         mPunkteAnsicht.setText(""+ mPunkte);
     }
 
-    //Dialog Quiz wirklich beenden
+    //Dialog "Quiz wirklich beenden?"
     public void startNewActivity(View v) {
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle("Quiz abbrechen");
@@ -196,7 +195,7 @@ public class Quiz extends AppCompatActivity {
         Intent intent = new Intent(this, Quiz_Start.class);
         startActivity(intent);
     }
-
+    //Funktion für Link zum Check
     private  void goToCheck(){
         Intent intent = new Intent(this, Check.class);
         startActivity(intent);

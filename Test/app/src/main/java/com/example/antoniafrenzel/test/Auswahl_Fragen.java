@@ -51,21 +51,21 @@ public class Auswahl_Fragen {
             "Maps und Navigation",
             "Tourismusbranche"},
             //6
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //7
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //8
             {"Bis zu 10 cm","Bis zu 50 cm","Bis zu einem Meter"},
             //9
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //10
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //11
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //12
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //13
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //14
             {"Daten werden durch das Bundesdatenschutzgesetz geschützt.",
                     "Blindes Vertrauen in Anbieter und Gefühl der Anonymität.",
@@ -73,9 +73,9 @@ public class Auswahl_Fragen {
             //15
             {"Geräte gehen öfters kaputt.","Herkömmliche Haushaltsgeräte werden unerschwinglich.","Alle IoT-Gegenstände können persönliche Daten über das Nutzerverhalten weitergeben."},
             //16
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //17
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //18
             {"23 Prozent","66 Prozent","71 Prozent"},
             //19
@@ -83,11 +83,11 @@ public class Auswahl_Fragen {
             //20
             {"Das Internet vergisst nicht.","Das Internet hat umfangreiche Gesetze zum Datenschutz","Das Internet vergisst nach 10 Jahren."},
             //21
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //22
             {"Zählpixel","Pharming","Phishing"},
             //23
-            {"Wahr","Falsch","unwichtig"},
+            {"Wahr","Falsch"," "},
             //24
             {"Der Nutzer bezahlt mit seinen persönlichen Daten","Google finanziert sich ausschließlich über Spenden","Google wird von EU-Geldern finanziert."}
 
