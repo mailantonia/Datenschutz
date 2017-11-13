@@ -11,7 +11,6 @@ public class Check extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check);
-
     }
 
     public void Mail_check(View v) {
@@ -37,6 +36,7 @@ public class Check extends AppCompatActivity {
         Intent intent = new Intent(this, Check_button_passwort.class);
         startActivity(intent);
     }
+
     public void StartNewAktivitaeten(View v) {
 
         Intent intent = new Intent(this, Check_button_Aktivitaeten.class);

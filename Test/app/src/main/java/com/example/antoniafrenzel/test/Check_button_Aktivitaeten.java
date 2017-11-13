@@ -38,6 +38,7 @@ public class Check_button_Aktivitaeten extends AppCompatActivity{
         Link = (TextView) findViewById(R.id.textView7);
         Link.setText("https://myactivity.google.com/myactivity");
     }
+
     //Zurück in das Menü
     public void goback(View v)
     {
