@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+//Hier wird das Layout zu dem Thema 'E-Mail Sicherheitscheck' gefüllt
+
 public class Check_button_mail extends AppCompatActivity {
 
     //Initialisierung der Variablen

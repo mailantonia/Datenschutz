@@ -11,6 +11,8 @@ import android.widget.TextView;
  * Created by Clara on 19.10.2017.
  */
 
+//Klasse, um die Informationen zu dem Themenbereich Google Standortlokalisierung in das Layout einzufügen
+
 public class Informationen_Google extends AppCompatActivity {
 
     //Initialisierung der Variablen

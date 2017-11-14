@@ -10,6 +10,8 @@ import android.widget.TextView;
  * Created by Antonia Frenzel on 26.10.2017.
  */
 
+//Hier wird das Layout zu dem Thema 'Google Meine Aktivitäten' gefüllt
+
 public class Check_button_Aktivitaeten extends AppCompatActivity{
     private TextView Kapitel;
     private TextView Teaser;
