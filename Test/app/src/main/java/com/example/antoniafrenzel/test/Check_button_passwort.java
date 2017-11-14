@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+//Hier wird das Layout zu dem Thema 'Passwort Sicherheitscheck' gefüllt
+
 public class Check_button_passwort extends AppCompatActivity {
 
     //Initialisierung der Variablen

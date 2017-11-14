@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+//Hier wird das Layout zu dem Thema 'Google Werbung' gefüllt
+
 public class Check_button_Werbung extends AppCompatActivity{
     private TextView Kapitel;
     private TextView Teaser;
