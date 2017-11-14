@@ -94,6 +94,10 @@ public class Auswahl_Fragen {
 
     }; ///{"","",""}
     //die richtige Antwort
+
+  //  private int mAntwort[]={
+        //    1,2,2,3,3,2,1,1,1,1,2,1,1,2,3,1,2,2,2,1,1,3,1,1
+   // };
     private String mAntwort[]={
             "Jede Person hat das Recht auf Achtung ihres Privats- und Familienlebens, ihrer Wohnung und ihrer Korrespondenz.",
             "4,5 Prozent",
@@ -102,7 +106,7 @@ public class Auswahl_Fragen {
             "Tourismusbranche", "Falsch", "Wahr","Bis zu 10 cm", "Wahr", "Wahr", "Falsch", "Wahr","Wahr",
             "Blindes Vertrauen in Anbieter und Gefühl der Anonymität.","Alle IoT-Gegenstände können persönliche Daten über das Nutzerverhalten weitergeben.",
             "Wahr","Falsch", "66 Prozent", "Bundesbeauftragter für den Datenschutz","Das Internet vergisst nicht.", "Wahr",
-            "Phishing", "Wahr", "Der Nutzer bezahlt mit seinen persönlichen Daten"};
+           "Phishing", "Wahr", "Der Nutzer bezahlt mit seinen persönlichen Daten"};
 
     //Get-Funktion für Frage
     public String getFrage(int a){
