@@ -5,6 +5,7 @@ package com.example.antoniafrenzel.test;
  */
 
 public class Auswahl_Informationen {
+        //Array enthält die Informationen zum Themenbereich Datenschutz
         public String Infos[]= {
                 "„Sammelbegriff über die in verschiedenen Gesetze zum Schutz des Individuums angeordneten Rechtsnormen, die erreichen sollen, dass seine Privatsphäre in einer zunehmend automatisierten und computerisierten Welt vor unberechtigten Zugriffen von außen geschützt wird.\n\nQuelle: Wirtschaftslexikon Gabler\n" + "\n",
                 "Jeder, der das Internet nutzt hinterlässt Spuren über seine Identität und sein Nutzerverhalten.",
@@ -16,6 +17,7 @@ public class Auswahl_Informationen {
                 "Glückwunsch! \n Du hast alle Informationen zu dem Thema Datenschutz durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
         };
 
+        //Array enthält die Informationen zum Themenbereich Standortlokalisierung
         public String Standort[]={
                 "VORTEILE \n\n Der Standortlokalisierung von Smartphones.",
                 "1. \n\nNavigationsgerät",
@@ -31,6 +33,7 @@ public class Auswahl_Informationen {
                 "GLÜCKWUNSCH! \n\n Du hast alle Informationen zu dem Thema Standortlokalisierung durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
         };
 
+        //Array enthält die Informationen zum Themenbereich Google Standortlokalisierung
         public String Google[]={
                 "FAKTEN \n\n Zu der Standortlokalisierung von Google Applikationen.",
                 "Laut einer Umfrage der Datenbank Statista nutzen 66 Prozent der Deutschen ab 16 Jahren Google-Dienste täglich.",
@@ -43,18 +46,21 @@ public class Auswahl_Informationen {
                 "GLÜCKWUNSCH! \n\n Du hast alle Informationen zu dem Thema Google Standortlokalisierung durchgearbeitet! Gehe zurück in das Menü, um weitere Informationen zu erhalten.",
         };
 
+        //Gibt den String an der Stelle i im Array Infos zurück
         public String getInfo(int i)
         {
             String Wissen = Infos[i];
             return Wissen;
         }
 
+        //Gibt den String an der Stelle x im Array Standort zurück
         public String getInfoStandort(int x)
         {
             String InfoStandort = Standort[x];
             return InfoStandort;
         }
 
+        //Gibt den String an der Stelle a im Array Google zurück
         public String getInfoGoogle(int a)
         {
             String InfoGoogle = Google[a];

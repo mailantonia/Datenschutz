@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+//Klasse, um die Informationen zu dem Themenbereich Datenschutz in das Layout einzufügen
+
 public class Informationen extends AppCompatActivity {
 
     //Initialisierung der Variablen
