@@ -136,7 +136,7 @@ public class Quiz extends AppCompatActivity {
             if (mPunkte ==10) {
                 mFragenAnsicht.setText(Html.fromHtml("Das Quiz ist beendet." + "<br>"+
                         "Du hast " + "<font color=#FF0080>"+mPunkte+"</font>" + " von "+"<font color=#FF0080>"+"10 "+"</font>"+ "Punkten." +"<br>"+
-                        "Gluckwunsch zu deinem Wissen. Du bist ein echter Datenschutzheld. Ein großes Lob an dich! Halte die Augen weiter so offen!"));
+                        "Gluckwunsch zu deinem Wissen. Du bist ein echter Datenschutzheld. Halte die Augen weiter so offen!"));
             }
             //Es wurde hier html verwendet, damit die Punkte hervorgehoben werden können
             else if (mPunkte <10 && (mPunkte >5)) {
