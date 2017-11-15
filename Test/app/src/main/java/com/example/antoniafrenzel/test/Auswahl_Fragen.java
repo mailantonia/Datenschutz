@@ -26,10 +26,11 @@ public class Auswahl_Fragen {
             "Wie viel Prozent der Deutschen ab 16 Jahren nutzen die Google-Dienste täglich?",
             "Welche Aufsicht für den öffentlichen Sektor gibt es für die Datenschutzkontrolle auf Bundesebene?",
             "Welcher Leitsatz gilt für das Internet?",
-            "Eine Suchmaschine hat die Möglichkeiten alle Informationen seiner Nutzer zu sammeln und jeden eine eindeutige Nummer zugeben.",
+            "Eine Suchmaschine hat die Möglichkeiten alle Informationen seiner Nutzer zu sammeln und jeden eine eindeutige Nummer zuzuweisen.",
             "Wie nennt man es, wenn vertrauliche Informationen wie Passwörter oder Kreditkartendaten abgefangt werden?",
             "Google ruft in regelmäßigen Abständen den Standort ab - auch wenn der Nutzer den Dienst in dem Moment nicht aktiv nutzen.",
-            "Google ist für die Nutzer kostenlos. Doch wie verdienst Google sein Geld?"
+            "Google ist für die Nutzer kostenlos. Doch wie verdienst Google sein Geld?",
+            "Was bedeutet die Abkürzung 'IoT'?"
     };
     //Antwortmöglichkeiten
     private String mAuswahl[][]={
@@ -90,7 +91,9 @@ public class Auswahl_Fragen {
             //23
             {"Wahr","Falsch"," "},
             //24
-            {"Der Nutzer bezahlt mit seinen persönlichen Daten","Google finanziert sich ausschließlich über Spenden","Google wird von EU-Geldern finanziert."}
+            {"Der Nutzer bezahlt mit seinen persönlichen Daten","Google finanziert sich ausschließlich über Spenden","Google wird von EU-Geldern finanziert."},
+            //25
+            {"Internet of Thrones","immer offene Türen","Internet of Things"}
 
     }; ///{"","",""}
     //die richtige Antwort
@@ -106,7 +109,7 @@ public class Auswahl_Fragen {
             "Tourismusbranche", "Falsch", "Wahr","Bis zu 10 cm", "Wahr", "Wahr", "Falsch", "Wahr","Wahr",
             "Blindes Vertrauen in Anbieter und Gefühl der Anonymität.","Alle IoT-Gegenstände können persönliche Daten über das Nutzerverhalten weitergeben.",
             "Wahr","Falsch", "66 Prozent", "Bundesbeauftragter für den Datenschutz","Das Internet vergisst nicht.", "Wahr",
-           "Phishing", "Wahr", "Der Nutzer bezahlt mit seinen persönlichen Daten"};
+            "Phishing", "Wahr", "Der Nutzer bezahlt mit seinen persönlichen Daten", "Internet of Things"};
 
     //Get-Funktion für Frage
     public String getFrage(int a){
