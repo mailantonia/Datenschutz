@@ -18,6 +18,7 @@ public class Quiz extends AppCompatActivity {
     private Auswahl_Fragen mAuswahlFragen = new Auswahl_Fragen();
 
     private TextView mPunkteAnsicht;
+    private TextView mPunkteText;
     private TextView mAnzFrage;
     private TextView mFragenAnsicht;
     private Button mButtonAuswahl1;
@@ -39,6 +40,7 @@ public class Quiz extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
           //Zuweisung der Felder an Variablen
         mPunkteAnsicht =(TextView)findViewById(R.id.score);
+        mPunkteText=(TextView)findViewById(R.id.score_text);
         mAnzFrage = (TextView)findViewById(R.id.AnzFrage);
         mFragenAnsicht = (TextView)findViewById(R.id.question);
         mButtonAuswahl1 = (Button)findViewById(R.id.buttonA);
@@ -126,6 +128,7 @@ public class Quiz extends AppCompatActivity {
          //Wenn 10 Fragen angezeigt wurden sind
         if (AnzFragen==10)
         {
+            mPunkteText.setText("Punkte insgesamt");
             mAnzFrage.setVisibility(View.INVISIBLE);        //Feld mit Anzahl der Fragen unsichtbar setzen
             mButtonAuswahl1.setVisibility(View.INVISIBLE);    //Button 1 unsichtbar setzten
             mButtonAuswahl2.setVisibility(View.INVISIBLE);    //Button 1 unsichtbar setzten
@@ -164,7 +167,7 @@ public class Quiz extends AppCompatActivity {
         }
         else {       //Wenn AnzFragen noch nicht 10 beträgt
 
-            mAnzFrage.setText(AnzFragen+1 + ". Frage in insgesamt 10");       //Anzeige der Nummer der Frage
+            mAnzFrage.setText(AnzFragen+1 + ". Frage von insgesamt 10");       //Anzeige der Nummer der Frage
             mFragennummer= createZufall();                                    //Zufallszahl wird für mFragennummer erstellt
 
             mFragenAnsicht.setText(mAuswahlFragen.getFrage(mFragennummer));    //Frage von Stelle mFragennummer aus dem Feld der Klasse "AuswahlFragen" laden

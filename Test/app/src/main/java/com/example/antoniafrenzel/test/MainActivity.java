@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
 
         final android.view.MenuItem aboutTheAppItem = menu.getItem(0);
-        //Wenn das Main-Menü geklickt wird
+        //Link zum Impressum
         aboutTheAppItem.setOnMenuItemClickListener(new android.view.MenuItem.OnMenuItemClickListener() {
 
             @Override

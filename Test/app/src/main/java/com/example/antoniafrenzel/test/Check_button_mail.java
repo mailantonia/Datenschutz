@@ -25,10 +25,10 @@ public class Check_button_mail extends AppCompatActivity {
         Kapitel.setText("E-Mail Sicherheitscheck");
 
         Teaser = (TextView) findViewById(R.id.textView6);
-        Teaser.setText("Wurden schon einmal SPAM-E-Mails in Deinem Namen und ohne Dein Wissen versendet? Wurde schon einmal Dein Facebook-Account gehackt? Oder fühlst Du Dich sicher im Internet? Mache jetzt Deinen persönlichen E-Mail Sicherheitscheck!");
+        Teaser.setText("Wurden schon einmal SPAM-E-Mails in deinem Namen und ohne dein Wissen versendet? Wurde schon einmal dein Facebook-Account gehackt? Oder fühlst du dich sicher im Internet? Mache jetzt deinen persönlichen E-Mail Sicherheitscheck!");
 
         Informationstext = (TextView) findViewById(R.id.textView5);
-        Informationstext.setText("Häufig werden E-Mail-Accounts zum Ziel von Hackerangriffen. Durch den illegalen Zugang zu privaten E-Mail-Accounts können Hacker diese zum Versand von SPAM-Mails missbrauchen. Zudem besteht die Gefahr, dass Dein Zugang zu sozialen Netzwerken und Online-Shops, die mit der entsprechenden Mailadresse verknüpft sind nicht mehr sicher sind. Daher ist es wichtig sein privates Konto gut zu schützen. Teste unter folgendem Link, ob Deine E-Mail-Adresse schon einmal gehackt wurde: \n");
+        Informationstext.setText("Häufig werden E-Mail-Accounts zum Ziel von Hackerangriffen. Durch den illegalen Zugang zu privaten E-Mail-Accounts können Hacker diese zum Versand von SPAM-Mails missbrauchen. Zudem besteht die Gefahr, dass dein Zugang zu sozialen Netzwerken und Online-Shops, die mit der entsprechenden Mailadresse verknüpft sind nicht mehr sicher sind. Daher ist es wichtig sein privates Konto gut zu schützen. Teste unter folgendem Link, ob deine E-Mail-Adresse schon einmal gehackt wurde: \n");
 
         Link = (TextView) findViewById(R.id.textView7);
         Link.setText("https://haveibeenpwned.com/");

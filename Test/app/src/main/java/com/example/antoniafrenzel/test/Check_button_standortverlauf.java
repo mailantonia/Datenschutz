@@ -28,7 +28,7 @@ public class Check_button_standortverlauf extends AppCompatActivity {
 
         Informationstext = (TextView) findViewById(R.id.textView5);
         Informationstext.setText("Google speichert hier wann du wo warst. Außerdem kannst du hier deine letzten Reisen, deine Wohnanschrift sowie den Standort deiner Arbeit finden.\n" +
-                "Sollte dir das zu viele Informationen über dich auf einem Schlag sein, hast du hier auch die Möglichkeit, den Standortverlauf zu pausieren oder ganz zu deaktivieren ;.)\n\n" +
+                "Sollte dir das zu viele Informationen über dich auf einem Schlag sein, hast du hier auch die Möglichkeit, den Standortverlauf zu pausieren oder ganz zu deaktivieren ;-)\n\n" +
                 "Unter diesem Link kannst du sehen, welchen Standorte Google von dir gespeichert hat: \n");
 
         Link = (TextView) findViewById(R.id.textView7);
