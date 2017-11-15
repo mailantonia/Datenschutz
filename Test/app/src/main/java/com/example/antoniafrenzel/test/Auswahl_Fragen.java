@@ -26,11 +26,13 @@ public class Auswahl_Fragen {
             "Wie viel Prozent der Deutschen ab 16 Jahren nutzen die Google-Dienste täglich?",
             "Welche Aufsicht für den öffentlichen Sektor gibt es für die Datenschutzkontrolle auf Bundesebene?",
             "Welcher Leitsatz gilt für das Internet?",
-            "Eine Suchmaschine hat die Möglichkeiten alle Informationen seiner Nutzer zu sammeln und jeden eine eindeutige Nummer zuzuweisen.",
+            "Eine Suchmaschine hat die Möglichkeit alle Informationen seiner Nutzer zu sammeln und jedem eine eindeutige ID-Nummer zuzuweisen.",
             "Wie nennt man es, wenn vertrauliche Informationen wie Passwörter oder Kreditkartendaten abgefangt werden?",
-            "Google ruft in regelmäßigen Abständen den Standort ab - auch wenn der Nutzer den Dienst in dem Moment nicht aktiv nutzen.",
+            "Google ruft in regelmäßigen Abständen den Standort ab - auch wenn der Nutzer den Dienst nicht aktiv verwendet.",
             "Google ist für die Nutzer kostenlos. Doch wie verdienst Google sein Geld?",
-            "Was bedeutet die Abkürzung 'IoT'?"
+            "Was bedeutet die Abkürzung 'IoT'?",
+            "Mit welcher Entwicklung hat der 'Boom' der Standortlokalisierung stattgefunden?",
+            "Was besagt das 'Recht auf Vergessenwerden'?"
     };
     //Antwortmöglichkeiten
     private String mAuswahl[][]={
@@ -93,8 +95,11 @@ public class Auswahl_Fragen {
             //24
             {"Der Nutzer bezahlt mit seinen persönlichen Daten","Google finanziert sich ausschließlich über Spenden","Google wird von EU-Geldern finanziert."},
             //25
-            {"Internet of Thrones","immer offene Türen","Internet of Things"}
-
+            {"Internet of Thrones","immer offene Türen","Internet of Things"},
+            //26
+            {"Radio","Computer","Smartphone"},
+            //27
+            {"Jeder hat das Recht sein Smartphone zu Hause zu vergessen.","Auf Antrag müssen persönliche Daten von Google gelöscht werden.","Jeder hat das Recht seine persönlichen Accounts nicht zu pflegen."}
     }; ///{"","",""}
     //die richtige Antwort
 
@@ -109,7 +114,7 @@ public class Auswahl_Fragen {
             "Tourismusbranche", "Falsch", "Wahr","Bis zu 10 cm", "Wahr", "Wahr", "Falsch", "Wahr","Wahr",
             "Blindes Vertrauen in Anbieter und Gefühl der Anonymität.","Alle IoT-Gegenstände können persönliche Daten über das Nutzerverhalten weitergeben.",
             "Wahr","Falsch", "66 Prozent", "Bundesbeauftragter für den Datenschutz","Das Internet vergisst nicht.", "Wahr",
-            "Phishing", "Wahr", "Der Nutzer bezahlt mit seinen persönlichen Daten", "Internet of Things"};
+            "Phishing", "Wahr", "Der Nutzer bezahlt mit seinen persönlichen Daten", "Internet of Things", "Smartphone", "Auf Antrag müssen persönliche Daten von Google gelöscht werden."};
 
     //Get-Funktion für Frage
     public String getFrage(int a){

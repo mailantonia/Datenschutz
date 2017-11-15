@@ -28,7 +28,7 @@ public class Check_button_passwort extends AppCompatActivity {
         Teaser.setText("Häufig vergeben Internetnutzer spontan ein Passwort, dass sie sich leicht merken können oder bereits mehrfach als Passwort zu anderen Accounts nutzen. Das kann zu Sicherheitslücken führen. Wie sicher ist dein Passwort?");
 
         Informationstext = (TextView) findViewById(R.id.textView5);
-        Informationstext.setText("\n1. Ein sicheres Passwort besteht aus Klein- und\n    Großbuchstaben sowie Zahlen und Sonderzeichen.\n\n2. Verwende kein geläufiges Wort sondern eine Abfolge\n     von Buchstaben, die für Dritte keinen Sinn ergibt.\n\n3. Tipp: Merke Dir beispielsweise einen Satz und\n     verwende die Anfangsbuchstaben der Wörter als\n     Passwort. \n\nTeste die Sicherheit Deines persönlichen Passwortes unter folgendem Link:\n");
+        Informationstext.setText("\n1. Ein sicheres Passwort besteht aus Klein- und\n    Großbuchstaben sowie Zahlen und Sonderzeichen.\n\n2. Verwende kein geläufiges Wort sondern eine Abfolge\n     von Buchstaben, die für Dritte keinen Sinn ergibt.\n\n3. Tipp: Merke dir beispielsweise einen Satz und\n     verwende die Anfangsbuchstaben der Wörter als\n     Passwort. \n\nTeste die Sicherheit deines persönlichen Passwortes unter folgendem Link:\n");
 
         Link = (TextView) findViewById(R.id.textView7);
         Link.setText("https://checkdeinpasswort.de/");
