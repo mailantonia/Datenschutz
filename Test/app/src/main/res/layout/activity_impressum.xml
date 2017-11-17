@@ -16,7 +16,8 @@
         android:layout_marginTop="100dp"
         android:padding="8dp"
         android:text="Diese App ist im Rahmen des Forschungsseminares an der TU Chemnitz im WS 2017/18 entstanden.\n
-Sie wurde erstellt von Clara Lachmann und Antonia Frenzel"
+Sie wurde erstellt von Clara Lachmann und Antonia Frenzel \n\nDie Quellen der Inhalte dieser App sind im Literaturverzeichnis des Proseminars nachzulesen."
+
          />
 
     <Button
