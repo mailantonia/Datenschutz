@@ -40,23 +40,23 @@ public class Informationen extends AppCompatActivity {
     }
 
     //Button Weiter
-     public void Button_Click(View v)
-     {
-         InfoArrayNumber = InfoArrayNumber + 1;
-         if (InfoArrayNumber == (N_Infos.Infos.length-1))
-         {
-             But_Weiter.setVisibility(View.INVISIBLE);
-             But_Zurück.setVisibility(View.VISIBLE);
-         }
-         else
-         {
-             But_Weiter.setVisibility(View.VISIBLE);
-             But_Zurück.setVisibility(View.VISIBLE);
-         }
+    public void Button_Click(View v)
+    {
+        InfoArrayNumber = InfoArrayNumber + 1;
+        if (InfoArrayNumber == (N_Infos.Infos.length-1))
+        {
+            But_Weiter.setVisibility(View.INVISIBLE);
+            But_Zurück.setVisibility(View.VISIBLE);
+        }
+        else
+        {
+            But_Weiter.setVisibility(View.VISIBLE);
+            But_Zurück.setVisibility(View.VISIBLE);
+        }
 
-         updatedInfos();
-         Folien_Zähler();
-     }
+        updatedInfos();
+        Folien_Zähler();
+    }
 
     //Button Zurück
     public void Button_Click_Zurück(View v)
