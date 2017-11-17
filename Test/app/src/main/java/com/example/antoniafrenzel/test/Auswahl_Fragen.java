@@ -40,7 +40,7 @@ public class Auswahl_Fragen {
             {"Jede Person hat das Recht auf Achtung ihres Privats- und Familienlebens, ihrer Wohnung und ihrer Korrespondenz.",
                     "Jede Person hat das Recht auf Achtung ihres Aussehens.",
                     "Jede Person hat das Recht auf Bildung."},
-            //Frage 2
+            //2
             {"4,5 Prozent","8,2 Prozent","13,1 Prozent"},
             //3
             {"Gesichtserkennungverbot",
@@ -49,7 +49,7 @@ public class Auswahl_Fragen {
             //4
             {"Dienste die bestimmen wie alt ein Gebäude ist.",
             "Dienste die verraten wie alt eine Person wirklich ist.",
-            "Dienste die die geografische Position einer Person genau bestimmen könne."},
+            "Dienste die die geografische Position einer Person genau bestimmen können."},
             //5
             {"Verkehr und Beförderung",
             "Maps und Navigation",
@@ -100,17 +100,14 @@ public class Auswahl_Fragen {
             {"Radio","Computer","Smartphone"},
             //27
             {"Jeder hat das Recht sein Smartphone zu Hause zu vergessen.","Auf Antrag müssen persönliche Daten von Google gelöscht werden.","Jeder hat das Recht seine persönlichen Accounts nicht zu pflegen."}
-    }; ///{"","",""}
-    //die richtige Antwort
+    };
 
-  //  private int mAntwort[]={
-        //    1,2,2,3,3,2,1,1,1,1,2,1,1,2,3,1,2,2,2,1,1,3,1,1
-   // };
+    //die richtige Antwort
     private String mAntwort[]={
             "Jede Person hat das Recht auf Achtung ihres Privats- und Familienlebens, ihrer Wohnung und ihrer Korrespondenz.",
             "4,5 Prozent",
             "Videoüberwachungsverbesserungsgesetz",
-            "Dienste die die geografische Position einer Person genau bestimmen könne.",
+            "Dienste die die geografische Position einer Person genau bestimmen können.",
             "Tourismusbranche", "Falsch", "Wahr","Bis zu 10 cm", "Wahr", "Wahr", "Falsch", "Wahr","Wahr",
             "Blindes Vertrauen in Anbieter und Gefühl der Anonymität.","Alle IoT-Gegenstände können persönliche Daten über das Nutzerverhalten weitergeben.",
             "Wahr","Falsch", "66 Prozent", "Bundesbeauftragter für den Datenschutz","Das Internet vergisst nicht.", "Wahr",
